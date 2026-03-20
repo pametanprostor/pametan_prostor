@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="sr" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0a0a0a" />
+
+  <title>Komadni Nameštaj po Meri – Pametan Prostor Beograd</title>
+  <meta name="description" content="Komadni nameštaj po meri u Beogradu – TV komode, radni stolovi, police, toaletni stolovi. Precizna izrada, premium materijali. Pametan Prostor." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.pametanprostor.rs/usluge/komadni-namestaj.html" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            gold: { 300:'#f0d080', 400:'#e4b84d', 500:'#c9973a', 600:'#a87c2e' },
+            zinc: { 950:'#09090b' }
+          },
+          fontFamily: {
+            serif: ['Playfair Display','Georgia','serif'],
+            sans: ['Inter','system-ui','sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body { background-color:#09090b; }
+    .gold-gradient { background:linear-gradient(135deg,#c9973a 0%,#e4b84d 50%,#c9973a 100%); }
+    .gold-text { background:linear-gradient(135deg,#e4b84d,#c9973a,#f0d080); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text; }
+    .hero-bg {
+      background:
+        linear-gradient(to bottom,rgba(9,9,11,0.55) 0%,rgba(9,9,11,0.78) 60%,rgba(9,9,11,1) 100%),
+        url('https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=1800&q=80') center/cover no-repeat;
+    }
+    .card-hover { transition:transform 0.3s ease,box-shadow 0.3s ease; }
+    .card-hover:hover { transform:translateY(-6px); box-shadow:0 20px 60px rgba(201,151,58,0.15); }
+    ::-webkit-scrollbar { width:6px; }
+    ::-webkit-scrollbar-track { background:#09090b; }
+    ::-webkit-scrollbar-thumb { background:#c9973a; border-radius:3px; }
+    #main-nav { transition:background 0.3s ease,box-shadow 0.3s ease; }
+    #main-nav.scrolled { background:rgba(9,9,11,0.97); box-shadow:0 1px 0 rgba(201,151,58,0.15); }
+    .faq-answer { max-height:0; overflow:hidden; transition:max-height 0.4s ease; }
+    .faq-item.open .faq-answer { max-height:400px; }
+    .faq-item.open .faq-icon { transform:rotate(45deg); }
+    .faq-icon { transition:transform 0.3s ease; }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Service",
+    "@id":"https://www.pametanprostor.rs/usluge/komadni-namestaj",
+    "name":"Komadni Nameštaj po Meri",
+    "description":"TV komode, radni stolovi, police, toaletni stolovi i svaki drugi komad nameštaja izrađen precizno po merama i dizajnu klijenta.",
+    "provider":{"@type":"LocalBusiness","@id":"https://www.pametanprostor.rs/#business","name":"Pametan Prostor"},
+    "areaServed":"Beograd, Srbija",
+    "serviceType":"Izrada komadnog nameštaja po meri"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"BreadcrumbList",
+    "itemListElement":[
+      {"@type":"ListItem","position":1,"name":"Početna","item":"https://www.pametanprostor.rs/"},
+      {"@type":"ListItem","position":2,"name":"Usluge"},
+      {"@type":"ListItem","position":3,"name":"Komadni nameštaj","item":"https://www.pametanprostor.rs/usluge/komadni-namestaj.html"}
+    ]
+  }
+  </script>
+</head>
+
+<body class="bg-zinc-950 text-white font-sans antialiased">
+
+  <header>
+    <nav id="main-nav" role="navigation" aria-label="Glavna navigacija" class="fixed top-0 left-0 right-0 z-50 px-6 lg:px-12 py-4">
+      <div class="max-w-7xl mx-auto flex items-center justify-between">
+        <a href="/" class="flex items-center gap-3" aria-label="Pametan Prostor – Početna">
+          <div class="w-10 h-10 gold-gradient rounded-sm flex items-center justify-center flex-shrink-0" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 22 22" fill="none"><rect x="2" y="2" width="8" height="8" rx="1" fill="#09090b"/><rect x="12" y="2" width="8" height="8" rx="1" fill="#09090b" opacity="0.6"/><rect x="2" y="12" width="8" height="8" rx="1" fill="#09090b" opacity="0.6"/><rect x="12" y="12" width="8" height="8" rx="1" fill="#09090b"/></svg>
+          </div>
+          <div>
+            <span class="text-white font-serif font-bold text-lg leading-none block">Pametan</span>
+            <span class="gold-text font-serif font-bold text-lg leading-none block">Prostor</span>
+          </div>
+        </a>
+
+        <ul class="hidden lg:flex items-center gap-8" role="menubar">
+          <li role="none"><a href="/" role="menuitem" class="text-sm text-zinc-400 font-medium tracking-wide hover:text-white transition-colors">Početna</a></li>
+          <li role="none"><a href="/o-nama.html" role="menuitem" class="text-sm text-zinc-400 font-medium tracking-wide hover:text-white transition-colors">O nama</a></li>
+          <li role="none" class="relative group">
+            <button role="menuitem" aria-haspopup="true" class="text-sm text-white font-medium tracking-wide flex items-center gap-1" aria-current="page">
+              Usluge <svg class="w-3.5 h-3.5 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+            </button>
+            <div class="absolute top-full left-1/2 -translate-x-1/2 mt-3 w-56 bg-zinc-900 border border-zinc-800 rounded-lg py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 shadow-2xl" role="menu">
+              <a href="/usluge/kuhinje-po-meri.html" role="menuitem" class="flex items-center gap-3 px-4 py-2.5 text-sm text-zinc-300 hover:text-white hover:bg-zinc-800 transition-colors"><span class="w-1.5 h-1.5 rounded-full bg-gold-500" aria-hidden="true"></span>Kuhinje po meri</a>
+              <a href="/usluge/plakari-ormari.html" role="menuitem" class="flex items-center gap-3 px-4 py-2.5 text-sm text-zinc-300 hover:text-white hover:bg-zinc-800 transition-colors"><span class="w-1.5 h-1.5 rounded-full bg-gold-500" aria-hidden="true"></span>Plakari i ugradni ormari</a>
+              <a href="/usluge/komadni-namestaj.html" role="menuitem" class="flex items-center gap-3 px-4 py-2.5 text-sm text-gold-400 bg-zinc-800/50"><span class="w-1.5 h-1.5 rounded-full bg-gold-500" aria-hidden="true"></span>Komadni nameštaj</a>
+            </div>
+          </li>
+          <li role="none"><a href="/portfolio.html" role="menuitem" class="text-sm text-zinc-400 font-medium tracking-wide hover:text-white transition-colors">Portfolio</a></li>
+          <li role="none"><a href="/faq.html" role="menuitem" class="text-sm text-zinc-400 font-medium tracking-wide hover:text-white transition-colors">FAQ</a></li>
+        </ul>
+
+        <div class="hidden lg:flex items-center gap-4">
+          <a href="tel:+38169241074" class="text-sm text-zinc-400 hover:text-gold-400 transition-colors font-medium">069 2410 747</a>
+          <a href="/kontakt.html" class="gold-gradient text-zinc-950 text-sm font-semibold px-5 py-2.5 rounded-sm hover:opacity-90 transition-opacity">Besplatan Upit</a>
+        </div>
+
+        <button id="mobile-menu-btn" class="lg:hidden p-2 text-zinc-400 hover:text-white" aria-label="Otvori meni" aria-expanded="false" onclick="toggleMobileMenu()">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+      <div id="mobile-menu" class="lg:hidden hidden mt-4 pb-4 border-t border-zinc-800">
+        <ul class="flex flex-col gap-1 pt-4">
+          <li><a href="/" class="block px-4 py-2.5 text-zinc-400 hover:text-white hover:bg-zinc-900 rounded-lg transition-colors">Početna</a></li>
+          <li><a href="/o-nama.html" class="block px-4 py-2.5 text-zinc-400 hover:text-white hover:bg-zinc-900 rounded-lg transition-colors">O nama</a></li>
+          <li><a href="/usluge/kuhinje-po-meri.html" class="block px-4 py-2.5 text-zinc-400 hover:text-white hover:bg-zinc-900 rounded-lg transition-colors">Kuhinje po meri</a></li>
+          <li><a href="/usluge/plakari-ormari.html" class="block px-4 py-2.5 text-zinc-400 hover:text-white hover:bg-zinc-900 rounded-lg transition-colors">Plakari i ugradni ormari</a></li>
+          <li><a href="/usluge/komadni-namestaj.html" class="block px-4 py-2.5 text-white font-medium bg-zinc-900 rounded-lg" aria-current="page">Komadni nameštaj</a></li>
+          <li><a href="/portfolio.html" class="block px-4 py-2.5 text-zinc-400 hover:text-white hover:bg-zinc-900 rounded-lg transition-colors">Portfolio</a></li>
+          <li><a href="/faq.html" class="block px-4 py-2.5 text-zinc-400 hover:text-white hover:bg-zinc-900 rounded-lg transition-colors">FAQ</a></li>
+          <li class="pt-2"><a href="/kontakt.html" class="block mx-4 py-3 gold-gradient text-zinc-950 font-semibold text-center rounded-sm hover:opacity-90">Besplatan Upit</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main-content">
+
+    <!-- Hero -->
+    <section class="hero-bg min-h-[65vh] flex flex-col justify-center relative overflow-hidden" aria-label="Komadni nameštaj – hero">
+      <div class="absolute left-0 top-0 bottom-0 w-1 gold-gradient opacity-60" aria-hidden="true"></div>
+      <div class="max-w-7xl mx-auto px-6 lg:px-12 w-full pt-32 pb-20">
+        <nav aria-label="Breadcrumb" class="mb-8">
+          <ol class="flex items-center gap-2 text-sm text-zinc-500">
+            <li><a href="/" class="hover:text-gold-400 transition-colors">Početna</a></li>
+            <li aria-hidden="true"><span class="mx-1">/</span></li>
+            <li>Usluge</li>
+            <li aria-hidden="true"><span class="mx-1">/</span></li>
+            <li class="text-gold-400 font-medium" aria-current="page">Komadni nameštaj</li>
+          </ol>
+        </nav>
+        <div class="flex items-center gap-3 mb-6">
+          <div class="w-8 h-px bg-gold-500" aria-hidden="true"></div>
+          <span class="text-gold-400 text-sm font-medium tracking-widest uppercase">Svaki komad je jedinstven</span>
+        </div>
+        <h1 class="font-serif text-5xl lg:text-6xl font-bold text-white leading-tight mb-6 max-w-3xl">
+          Nameštaj izrađen<br/><span class="gold-text">tačno za vas</span>
+        </h1>
+        <p class="text-xl text-zinc-300 max-w-2xl leading-relaxed mb-10">
+          TV komode, radni stolovi, police, toaletni stolovi, hodničke klupe – svaki komad precizno prilagođen vašim merama, stilu i potrebama.
+        </p>
+        <a href="/kontakt.html" class="inline-block gold-gradient text-zinc-950 font-semibold text-base px-8 py-4 rounded-sm hover:opacity-90 transition-opacity">Pošaljite upit sa dimenzijama</a>
+      </div>
+    </section>
+
+    <!-- Products grid -->
+    <section class="py-24 px-6 lg:px-12" aria-labelledby="komadi-heading">
+      <div class="max-w-7xl mx-auto">
+        <header class="mb-14">
+          <div class="flex items-center gap-3 mb-4" aria-hidden="true">
+            <div class="w-8 h-px bg-gold-500"></div>
+            <span class="text-gold-400 text-sm font-medium tracking-widest uppercase">Šta izrađujemo</span>
+          </div>
+          <h2 id="komadi-heading" class="font-serif text-4xl font-bold text-white">Komadi <span class="gold-text">po vašoj meri</span></h2>
+          <p class="text-zinc-400 mt-4 max-w-xl">Ako zamislite – mi možemo da napravimo. Svaki zahtev razmatramo individualno.</p>
+        </header>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <article class="bg-zinc-900 border border-zinc-800 rounded-xl p-6 card-hover group">
+            <div class="w-12 h-12 gold-gradient rounded-lg flex items-center justify-center mb-5" aria-hidden="true">
+              <svg class="w-6 h-6 text-zinc-950" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+            </div>
+            <h3 class="font-serif text-xl font-bold text-white mb-3">TV komode i entertainment jedinice</h3>
+            <p class="text-zinc-500 text-sm leading-relaxed">Jedinice za dnevnu sobu prilagođene vašem TV-u, konzolama i audio opremi. Sa kabliranjem unutar, LED pozadinskim osvetljenjem i fiokama.</p>
+          </article>
+          <article class="bg-zinc-900 border border-zinc-800 rounded-xl p-6 card-hover group">
+            <div class="w-12 h-12 gold-gradient rounded-lg flex items-center justify-center mb-5" aria-hidden="true">
+              <svg class="w-6 h-6 text-zinc-950" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
+            </div>
+            <h3 class="font-serif text-xl font-bold text-white mb-3">Police za knjige i vitrine</h3>
+            <p class="text-zinc-500 text-sm leading-relaxed">Biblioteke od poda do plafona, vitrine sa staklenim fronovima, modularne police u skladu sa prostorom i kolekcijom.</p>
+          </article>
+          <article class="bg-zinc-900 border border-zinc-800 rounded-xl p-6 card-hover group">
+            <div class="w-12 h-12 gold-gradient rounded-lg flex items-center justify-center mb-5" aria-hidden="true">
+              <svg class="w-6 h-6 text-zinc-950" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/></svg>
+            </div>
+            <h3 class="font-serif text-xl font-bold text-white mb-3">Radni stolovi i home office</h3>
+            <p class="text-zinc-500 text-sm leading-relaxed">Ergonomski radni prostori sa ugradnim napajanjem, kabliranjem, policama i fiokama. Prilagođeni kućnoj kancelariji ili profesionalnom studiju.</p>
+          </article>
+          <article class="bg-zinc-900 border border-zinc-800 rounded-xl p-6 card-hover group">
+            <div class="w-12 h-12 gold-gradient rounded-lg flex items-center justify-center mb-5" aria-hidden="true">
+              <svg class="w-6 h-6 text-zinc-950" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 10h16M4 14h16M4 18h16"/></svg>
+            </div>
+            <h3 class="font-serif text-xl font-bold text-white mb-3">Hodničke klupe i komode</h3>
+            <p class="text-zinc-500 text-sm leading-relaxed">Klupe sa odlaganjem za cipele, vešalice integrisa ne u strukturu, ogledala i komode za hodnik. Funkcionalni i elegantni ulaz u dom.</p>
+          </article>
+          <article class="bg-zinc-900 border border-zinc-800 rounded-xl p-6 card-hover group">
+            <div class="w-12 h-12 gold-gradient rounded-lg flex items-center justify-center mb-5" aria-hidden="true">
+              <svg class="w-6 h-6 text-zinc-950" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg>
+            </div>
+            <h3 class="font-serif text-xl font-bold text-white mb-3">Toaletni stolovi i garsonijere</h3>
+            <p class="text-zinc-5 00 text-sm leading-relaxed">Toaletni stolovi sa ogledalom i osvetljenjem, garsonijere prilagođene svakom prostoru, noćni ormari sa punjačima unutra.</p>
+          </article>
+          <article class="bg-zinc-900 border border-zinc-800 rounded-xl p-6 card-hover group">
+            <div class="w-12 h-12 gold-gradient rounded-lg flex items-center justify-center mb-5" aria-hidden="true">
+              <svg class="w-6 h-6 text-zinc-950" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/></svg>
+            </div>
+            <h3 class="font-serif text-xl font-bold text-white mb-3">Specijalni i atipični projekti</h3>
+            <p class="text-zinc-500 text-sm leading-relaxed">Barski pultovi, recepcije, kafeterije, enterijeri lokala – ako imate specifičan zahtev, kontaktirajte nas. Volimo izazove.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why custom -->
+    <section class="py-24 px-6 lg:px-12 bg-zinc-900/30" aria-labelledby="zasto-heading">
+      <div class="max-w-7xl mx-auto">
+        <div class="grid lg:grid-cols-2 gap-16 items-center">
+          <div>
+            <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=700&q=80"
+              alt="Detalj komadnog nameštaja – precizna obrada ivice i detalja"
+              class="w-full h-96 object-cover rounded-xl opacity-80"
+              loading="lazy" width="700" height="500"/>
+          </div>
+          <div>
+            <div class="flex items-center gap-3 mb-5" aria-hidden="true">
+              <div class="w-8 h-px bg-gold-500"></div>
+              <span class="text-gold-400 text-sm font-medium tracking-widest uppercase">Zašto po meri</span>
+            </div>
+            <h2 id="zasto-heading" class="font-serif text-4xl font-bold text-white mb-6">
+              Nameštaj koji <span class="gold-text">rešava problem</span>
+            </h2>
+            <p class="text-zinc-400 leading-relaxed mb-8">Serijski nameštaj dolazi u standardnim merama koje retko odgovaraju vašem prostoru. Komadni nameštaj po meri rešava svaki izazov – kosi zidovi, niskonaponski prostori, nestandardne dimenzije.</p>
+            <ul class="space-y-4">
+              <li class="flex items-start gap-4">
+                <div class="w-9 h-9 gold-gradient rounded-sm flex items-center justify-center flex-shrink-0 mt-0.5" aria-hidden="true">
+                  <svg class="w-4 h-4 text-zinc-950" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+                </div>
+                <div>
+                  <h3 class="text-white font-semibold mb-1 text-sm">Tačno na vaše mere</h3>
+                  <p class="text-zinc-500 text-sm">Ne kompromis u dimenzijama – svaki milimetar je vaš prostor.</p>
+                </div>
+              </li>
+              <li class="flex items-start gap-4">
+                <div class="w-9 h-9 gold-gradient rounded-sm flex items-center justify-center flex-shrink-0 mt-0.5" aria-hidden="true">
+                  <svg class="w-4 h-4 text-zinc-950" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+                </div>
+                <div>
+                  <h3 class="text-white font-semibold mb-1 text-sm">Usklađen sa ostatkom prostora</h3>
+                  <p class="text-zinc-500 text-sm">Isti dekor, isti materijali, isti stil kao ostali nameštaj u stanu.</p>
+                </div>
+              </li>
+              <li class="flex items-start gap-4">
+                <div class="w-9 h-9 gold-gradient rounded-sm flex items-center justify-center flex-shrink-0 mt-0.5" aria-hidden="true">
+                  <svg class="w-4 h-4 text-zinc-950" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+                </div>
+                <div>
+                  <h3 class="text-white font-semibold mb-1 text-sm">Kvalitet koji traje</h3>
+                  <p class="text-zinc-500 text-sm">E1 ploče, ABS trakice, Blum okovi – nema kompromisa u materijalima.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="py-24 px-6 lg:px-12" aria-label="Poziv na akciju">
+      <div class="max-w-3xl mx-auto text-center">
+        <div class="gold-gradient p-px rounded-2xl">
+          <div class="bg-zinc-950 rounded-2xl p-12">
+            <h2 class="font-serif text-3xl font-bold text-white mb-5">Imate ideju za <span class="gold-text">nameštaj?</span></h2>
+            <p class="text-zinc-400 mb-8">Pošaljite nam skicu, dimenzije ili samo opis – naš tim će vas kontaktirati u roku od 24h sa predlogom rešenja.</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+              <a href="/kontakt.html" class="gold-gradient text-zinc-950 font-semibold px-8 py-4 rounded-sm hover:opacity-90 transition-opacity">Pošaljite upit</a>
+              <a href="tel:+38169241074" class="border border-zinc-600 text-white font-medium px-8 py-4 rounded-sm hover:border-gold-500 hover:text-gold-400 transition-colors">069 2410 747</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="bg-zinc-950 border-t border-zinc-800 pt-16 pb-8 px-6 lg:px-12">
+    <div class="max-w-7xl mx-auto">
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+        <div class="lg:col-span-2">
+          <a href="/" class="flex items-center gap-3 mb-5 w-fit">
+            <div class="w-10 h-10 gold-gradient rounded-sm flex items-center justify-center" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 22 22" fill="none"><rect x="2" y="2" width="8" height="8" rx="1" fill="#09090b"/><rect x="12" y="2" width="8" height="8" rx="1" fill="#09090b" opacity="0.6"/><rect x="2" y="12" width="8" height="8" rx="1" fill="#09090b" opacity="0.6"/><rect x="12" y="12" width="8" height="8" rx="1" fill="#09090b"/></svg>
+            </div>
+            <div><span class="text-white font-serif font-bold text-lg leading-none block">Pametan</span><span class="gold-text font-serif font-bold text-lg leading-none block">Prostor</span></div>
+          </a>
+          <p class="text-zinc-500 text-sm leading-relaxed max-w-sm">Premium izrada nameštaja po meri u Beogradu. Kuhinje, plakari i ormari koji savršeno staju u vaš prostor.</p>
+          <address class="mt-6 not-italic space-y-2">
+            <p class="text-zinc-400 text-sm">Bulevar oslobođenja 123, Beograd</p>
+            <p class="text-zinc-400 text-sm"><a href="tel:+38169241074" class="hover:text-gold-400 transition-colors">069 2410 747</a></p>
+            <p class="text-zinc-400 text-sm"><a href="mailto:info@pametanprostor.rs" class="hover:text-gold-400 transition-colors">info@pametanprostor.rs</a></p>
+          </address>
+        </div>
+        <div>
+          <h3 class="text-white font-semibold text-sm tracking-wide uppercase mb-5">Usluge</h3>
+          <ul class="space-y-3">
+            <li><a href="/usluge/kuhinje-po-meri.html" class="text-zinc-500 text-sm hover:text-gold-400 transition-colors">Kuhinje po meri</a></li>
+            <li><a href="/usluge/plakari-ormari.html" class="text-zinc-500 text-sm hover:text-gold-400 transition-colors">Plakari i ugradni ormari</a></li>
+            <li><a href="/usluge/komadni-namestaj.html" class="text-gold-400 text-sm font-medium">Komadni nameštaj</a></li>
+            <li><a href="/portfolio.html" class="text-zinc-500 text-sm hover:text-gold-400 transition-colors">Portfolio radova</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-white font-semibold text-sm tracking-wide uppercase mb-5">Kompanija</h3>
+          <ul class="space-y-3">
+            <li><a href="/o-nama.html" class="text-zinc-500 text-sm hover:text-gold-400 transition-colors">O nama</a></li>
+            <li><a href="/faq.html" class="text-zinc-500 text-sm hover:text-gold-400 transition-colors">FAQ</a></li>
+            <li><a href="/kontakt.html" class="text-zinc-500 text-sm hover:text-gold-400 transition-colors">Kontakt</a></li>
+          </ul>
+          <div class="mt-8"><p class="text-zinc-500 text-xs font-medium">Dostupni 24/7</p></div>
+        </div>
+      </div>
+      <div class="border-t border-zinc-800 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+        <p class="text-zinc-600 text-xs">© 2026 Pametan Prostor. Sva prava zadržana.</p>
+        <p class="text-zinc-600 text-xs">Izrada sajta: <a href="https://quantex.rs" target="_blank" rel="noopener noreferrer" class="text-zinc-500 hover:text-gold-400 transition-colors underline underline-offset-2">Quantex.rs</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const nav = document.getElementById('main-nav');
+    window.addEventListener('scroll', () => nav.classList.toggle('scrolled', window.scrollY > 50), {passive:true});
+    function toggleMobileMenu() {
+      const menu = document.getElementById('mobile-menu');
+      const btn = document.getElementById('mobile-menu-btn');
+      const isHidden = menu.classList.toggle('hidden');
+      btn.setAttribute('aria-expanded', String(!isHidden));
+    }
+  </script>
+</body>
+</html>

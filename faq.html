@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="sr" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0a0a0a" />
+
+  <title>FAQ – Česta Pitanja | Pametan Prostor Nameštaj po Meri Beograd</title>
+  <meta name="description" content="Odgovori na sva česta pitanja o izradi nameštaja po meri – rokovi, cene, materijali, garancija, plaćanje. Pametan Prostor Beograd." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.pametanprostor.rs/faq.html" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            gold: { 300:'#f0d080', 400:'#e4b84d', 500:'#c9973a', 600:'#a87c2e' },
+            zinc: { 950:'#09090b' }
+          },
+          fontFamily: {
+            serif: ['Playfair Display','Georgia','serif'],
+            sans: ['Inter','system-ui','sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body { background-color:#09090b; }
+    .gold-gradient { background:linear-gradient(135deg,#c9973a 0%,#e4b84d 50%,#c9973a 100%); }
+    .gold-text { background:linear-gradient(135deg,#e4b84d,#c9973a,#f0d080); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text; }
+    ::-webkit-scrollbar { width:6px; }
+    ::-webkit-scrollbar-track { background:#09090b; }
+    ::-webkit-scrollbar-thumb { background:#c9973a; border-radius:3px; }
+    #main-nav { transition:background 0.3s ease,box-shadow 0.3s ease; }
+    #main-nav.scrolled { background:rgba(9,9,11,0.97); box-shadow:0 1px 0 rgba(201,151,58,0.15); }
+    .faq-answer { max-height:0; overflow:hidden; transition:max-height 0.45s ease; }
+    .faq-item.open .faq-answer { max-height:600px; }
+    .faq-item.open .faq-icon { transform:rotate(45deg); }
+    .faq-icon { transition:transform 0.3s ease; }
+    .category-btn.active { background:linear-gradient(135deg,#c9973a,#e4b84d); color:#09090b; border-color:transparent; }
+    .faq-section { display:none; }
+    .faq-section.visible { display:block; }
+  </style>
+
+  <!-- AEO: FAQPage JSON-LD – maksimalni coverage za Google i AI sisteme -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"FAQPage",
+    "mainEntity":[
+      {
+        "@type":"Question",
+        "name":"Koliko traje izrada kuhinje po meri?",
+        "acceptedAnswer":{"@type":"Answer","text":"Za standardnu kuhinju rok izrade je 3 do 5 nedelja od momenta potvrde narudžbine i avansnog plaćanja (40%). Rok uključuje narudžbinu materijala, preciznu izradu u radionici, transport i profesionalnu montažu. Rok je definisan ugovorom sa kaznenom klauzulom."}
+      },
+      {
+        "@type":"Question",
+        "name":"Koliko traje izrada ugradnog ormara?",
+        "acceptedAnswer":{"@type":"Answer","text":"Ugradni ormari i plakari se izrađuju za 2 do 3 nedelje od potvrde narudžbine. Manji komadni nameštaj može biti gotov za 7 do 10 radnih dana."}
+      },
+      {
+        "@type":"Question",
+        "name":"Kakva je cena kuhinje po meri?",
+        "acceptedAnswer":{"@type":"Answer","text":"Okvirna cena standardne kuhinje kreće se od 2.500€ naviše, zavisno od dimenzija, odabranih materijala frontova i radne površine. Svaka ponuda uključuje besplatno merenje, 3D projektovanje, materijal, izradu, transport i montažu. Dajemo detaljnu specifikaciju troškova bez skrivenih stavki."}
+      },
+      {
+        "@type":"Question",
+        "name":"Kakva je cena ugradnog ormara?",
+        "acceptedAnswer":{"@type":"Answer","text":"Cena ugradnog ormara kreće se od 800€ naviše, zavisno od dimenzija, tipa vrata (šarnir ili klizna), i unutrašnje opreme (fioke, sistemi za cipele, LED osvetljenje)."}
+      },
+      {
+        "@type":"Question",
+        "name":"Koji materijali se koriste za kuhinjske frontove?",
+        "acceptedAnswer":{"@type":"Answer","text":"Koristimo HDF frontove u mat lakovim, sjaj lakovim, UV lakovim, folio i furnir. Za radne površine nudimo: kvarcopolimer (Silestone, Compac), granit, Dekton ultra-kompaktnu površinu i HPL laminat."}
+      },
+      {
+        "@type":"Question",
+        "name":"Koji okovi se koriste za nameštaj?",
+        "acceptedAnswer":{"@type":"Answer","text":"Koristimo isključivo okove vrhunskih evropskih proizvođača: Blum (Austrija), Hettich (Nemačka) i Grass. Svi dolaze sa doživotnom garancijom na mehanizme i poznati su po tihom i preciznom radu."}
+      },
+      {
+        "@type":"Question",
+        "name":"Da li nudite garanciju na izrađeni nameštaj?",
+        "acceptedAnswer":{"@type":"Answer","text":"Da, na sav izrađeni nameštaj dajemo garanciju od 2 godine na konstrukciju i ugradnju. Blum i Hettich okovi imaju doživotnu garanciju proizvođača. Nakon garantnog roka nudimo servisnu podršku."}
+      },
+      {
+        "@type":"Question",
+        "name":"Kako izgleda proces plaćanja?",
+        "acceptedAnswer":{"@type":"Answer","text":"Plaćanje se vrši u dve rate: 40% avansno plaćanje pri potvrdi narudžbine, i 60% po završenoj montaži. Ne naplaćujemo merenje ni konsultaciju. Nudimo plaćanje gotovinom, karticom ili bankovnim transferom."}
+      },
+      {
+        "@type":"Question",
+        "name":"Da li je merenje besplatno?",
+        "acceptedAnswer":{"@type":"Answer","text":"Da, merenje i konsultacija su potpuno besplatni i bez obaveza. Naš tehničar dolazi na vašu lokaciju, precizno meri prostor i pruža stručni savet. Tek nakon što vidite 3D projekat i ponudu, vi odlučujete."}
+      },
+      {
+        "@type":"Question",
+        "name":"Da li radite samo u Beogradu?",
+        "acceptedAnswer":{"@type":"Answer","text":"Primarno pokrivamo Beograd i okolinu u radijusu do 50km (uključujući Novi Sad, Pančevo, Smederevo, Mladenovac). Za veće projekte izlazimo i u ostale delove Srbije uz prethodnu najavu i dogovor."}
+      },
+      {
+        "@type":"Question",
+        "name":"Da li radite 3D vizualizaciju pre izrade?",
+        "acceptedAnswer":{"@type":"Answer","text":"Da, 3D vizualizacija je sastavni deo procesa i uključena je u cenu. Dizajner izrađuje realističan 3D prikaz u roku od 24 sata od merenja. Možete tražiti izmene sve dok ne budete zadovoljni pre nego što se iseče materijal."}
+      },
+      {
+        "@type":"Question",
+        "name":"Šta je uključeno u cenu nameštaja po meri?",
+        "acceptedAnswer":{"@type":"Answer","text":"Svaka cena uključuje: besplatno merenje na terenu, 3D projektovanje i neograničene korekcije projekta, kompletan materijal (ploče, frontovi, okovi, radna površina), preciznu CNC izradu u radionici, transport do lokacije i profesionalnu montažu. Nema skrivenih troškova."}
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"BreadcrumbList",
+    "itemListElement":[
+      {"@type":"ListItem","position":1,"name":"Početna","item":"https://www.pametanprostor.rs/"},
+      {"@type":"ListItem","position":2,"name":"FAQ","item":"https://www.pametanprostor.rs/faq.html"}
+    ]
+  }
+  </script>
+</head>
+
+<body class="bg-zinc-950 text-white font-sans antialiased">
+
+  <header>
+    <nav id="main-nav" role="navigation" aria-label="Glavna navigacija" class="fixed top-0 left-0 right-0 z-50 px-6 lg:px-12 py-4">
+      <div class="max-w-7xl mx-auto flex items-center justify-between">
+        <a href="/" class="flex items-center gap-3" aria-label="Pametan Prostor – Početna">
+          <div class="w-10 h-10 gold-gradient rounded-sm flex items-center justify-center flex-shrink-0" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 22 22" fill="none"><rect x="2" y="2" width="8" height="8" rx="1" fill="#09090b"/><rect x="12" y="2" width="8" height="8" rx="1" fill="#09090b" opacity="0.6"/><rect x="2" y="12" width="8" height="8" rx="1" fill="#09090b" opacity="0.6"/><rect x="12" y="12" width="8" height="8" rx="1" fill="#09090b"/></svg>
+          </div>
+          <div>
+            <span class="text-white font-serif font-bold text-lg leading-none block">Pametan</span>
+            <span class="gold-text font-serif font-bold text-lg leading-none block">Prostor</span>
+          </div>
+        </a>
+
+        <ul class="hidden lg:flex items-center gap-8" role="menubar">
+          <li role="none"><a href="/" role="menuitem" class="text-sm text-zinc-400 font-medium tracking-wide hover:text-white transition-colors">Početna</a></li>
+          <li role="none"><a href="/o-nama.html" role="menuitem" class="text-sm text-zinc-400 font-medium tracking-wide hover:text-white transition-colors">O nama</a></li>
+          <li role="none" class="relative group">
+            <button role="menuitem" aria-haspopup="true" class="text-sm text-zinc-400 font-medium tracking-wide hover:text-white transition-colors flex items-center gap-1">
+              Usluge <svg class="w-3.5 h-3.5 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+            </button>
+            <div class="absolute top-full left-1/2 -translate-x-1/2 mt-3 w-56 bg-zinc-900 border border-zinc-800 rounded-lg py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 shadow-2xl" role="menu">
+              <a href="/usluge/kuhinje-po-meri.html" role="menuitem" class="flex items-center gap-3 px-4 py-2.5 text-sm text-zinc-300 hover:text-white hover:bg-zinc-800 transition-colors"><span class="w-1.5 h-1.5 rounded-full bg-gold-500" aria-hidden="true"></span>Kuhinje po meri</a>
+              <a href="/usluge/plakari-ormari.html" role="menuitem" class="flex items-center gap-3 px-4 py-2.5 text-sm text-zinc-300 hover:text-white hover:bg-zinc-800 transition-colors"><span class="w-1.5 h-1.5 rounded-full bg-gold-500" aria-hidden="true"></span>Plakari i ugradni ormari</a>
+              <a href="/usluge/komadni-namestaj.html" role="menuitem" class="flex items-center gap-3 px-4 py-2.5 text-sm text-zinc-300 hover:text-white hover:bg-zinc-800 transition-colors"><span class="w-1.5 h-1.5 rounded-full bg-gold-500" aria-hidden="true"></span>Komadni nameštaj</a>
+            </div>
+          </li>
+          <li role="none"><a href="/portfolio.html" role="menuitem" class="text-sm text-zinc-400 font-medium tracking-wide hover:text-white transition-colors">Portfolio</a></li>
+          <li role="none"><a href="/faq.html" role="menuitem" class="text-sm text-white font-medium tracking-wide hover:text-gold-400 transition-colors" aria-current="page">FAQ</a></li>
+        </ul>
+
+        <div class="hidden lg:flex items-center gap-4">
+          <a href="tel:+38169241074" class="text-sm text-zinc-400 hover:text-gold-400 transition-colors font-medium">069 2410 747</a>
+          <a href="/kontakt.html" class="gold-gradient text-zinc-950 text-sm font-semibold px-5 py-2.5 rounded-sm hover:opacity-90 transition-opacity">Besplatan Upit</a>
+        </div>
+
+        <button id="mobile-menu-btn" class="lg:hidden p-2 text-zinc-400 hover:text-white" aria-label="Otvori meni" aria-expanded="false" onclick="toggleMobileMenu()">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+      <div id="mobile-menu" class="lg:hidden hidden mt-4 pb-4 border-t border-zinc-800">
+        <ul class="flex flex-col gap-1 pt-4">
+          <li><a href="/" class="block px-4 py-2.5 text-zinc-400 hover:text-white hover:bg-zinc-900 rounded-lg transition-colors">Početna</a></li>
+          <li><a href="/o-nama.html" class="block px-4 py-2.5 text-zinc-400 hover:text-white hover:bg-zinc-900 rounded-lg transition-colors">O nama</a></li>
+          <li><a href="/usluge/kuhinje-po-meri.html" class="block px-4 py-2.5 text-zinc-400 hover:text-white hover:bg-zinc-900 rounded-lg transition-colors">Kuhinje po meri</a></li>
+          <li><a href="/usluge/plakari-ormari.html" class="block px-4 py-2.5 text-zinc-400 hover:text-white hover:bg-zinc-900 rounded-lg transition-colors">Plakari i ugradni ormari</a></li>
+          <li><a href="/usluge/komadni-namestaj.html" class="block px-4 py-2.5 text-zinc-400 hover:text-white hover:bg-zinc-900 rounded-lg transition-colors">Komadni nameštaj</a></li>
+          <li><a href="/portfolio.html" class="block px-4 py-2.5 text-zinc-400 hover:text-white hover:bg-zinc-900 rounded-lg transition-colors">Portfolio</a></li>
+          <li><a href="/faq.html" class="block px-4 py-2.5 text-white font-medium bg-zinc-900 rounded-lg" aria-current="page">FAQ</a></li>
+          <li class="pt-2"><a href="/kontakt.html" class="block mx-4 py-3 gold-gradient text-zinc-950 font-semibold text-center rounded-sm hover:opacity-90">Besplatan Upit</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main-content">
+
+    <!-- Page header -->
+    <section class="pt-32 pb-16 px-6 lg:px-12 border-b border-zinc-800/50" aria-label="FAQ header">
+      <div class="max-w-4xl mx-auto text-center">
+        <nav aria-label="Breadcrumb" class="mb-8 flex justify-center">
+          <ol class="flex items-center gap-2 text-sm text-zinc-500">
+            <li><a href="/" class="hover:text-gold-400 transition-colors">Početna</a></li>
+            <li aria-hidden="true"><span class="mx-1">/</span></li>
+            <li class="text-gold-400 font-medium" aria-current="page">FAQ</li>
+          </ol>
+        </nav>
+        <div class="flex items-center justify-center gap-3 mb-5" aria-hidden="true">
+          <div class="w-8 h-px bg-gold-500"></div>
+          <span class="text-gold-400 text-sm font-medium tracking-widest uppercase">Česta pitanja</span>
+          <div class="w-8 h-px bg-gold-500"></div>
+        </div>
+        <h1 class="font-serif text-5xl lg:text-6xl font-bold text-white leading-tight mb-5">
+          Sve što trebate <span class="gold-text">da znate</span>
+        </h1>
+        <p class="text-zinc-400 text-lg max-w-2xl mx-auto leading-relaxed">
+          Odgovorili smo na najčešća pitanja naših klijenata o procesu, materijalima, cenama i garanciji. Ako ne pronađete odgovor – pozovite nas.
+        </p>
+      </div>
+    </section>
+
+    <!-- FAQ categories + content -->
+    <section class="py-16 px-6 lg:px-12" aria-label="FAQ baza znanja">
+      <div class="max-w-4xl mx-auto">
+
+        <!-- Category tabs -->
+        <div class="flex flex-wrap gap-3 mb-12 justify-center" role="tablist" aria-label="Kategorije pitanja">
+          <button onclick="showCategory('process')" class="category-btn active px-5 py-2.5 rounded-sm text-sm font-medium border border-zinc-700 transition-all" data-category="process" role="tab" aria-selected="true">Proces i rokovi</button>
+          <button onclick="showCategory('materijali')" class="category-btn px-5 py-2.5 rounded-sm text-sm font-medium border border-zinc-700 text-zinc-400 hover:text-white hover:border-zinc-500 transition-all" data-category="materijali" role="tab" aria-selected="false">Materijali</button>
+          <button onclick="showCategory('cene')" class="category-btn px-5 py-2.5 rounded-sm text-sm font-medium border border-zinc-700 text-zinc-400 hover:text-white hover:border-zinc-500 transition-all" data-category="cene" role="tab" aria-selected="false">Cene i plaćanje</button>
+          <button onclick="showCategory('garancija')" class="category-btn px-5 py-2.5 rounded-sm text-sm font-medium border border-zinc-700 text-zinc-400 hover:text-white hover:border-zinc-500 transition-all" data-category="garancija" role="tab" aria-selected="false">Garancija i servis</button>
+          <button onclick="showCategory('logistika')" class="category-btn px-5 py-2.5 rounded-sm text-sm font-medium border border-zinc-700 text-zinc-400 hover:text-white hover:border-zinc-500 transition-all" data-category="logistika" role="tab" aria-selected="false">Montaža i dostava</button>
+        </div>
+
+        <!-- PROCESS -->
+        <div id="faq-process" class="faq-section visible space-y-3" role="tabpanel">
+          <div class="faq-item bg-zinc-900 border border-zinc-800 rounded-xl overflow-hidden">
+            <button class="w-full flex items-center justify-between px-6 py-5 text-left hover:bg-zinc-800/50 transition-colors" onclick="toggleFaq(this)" aria-expanded="false">
+              <span class="font-medium text-white pr-4">Koliko traje izrada kuhinje po meri?</span>
+              <svg class="faq-icon w-5 h-5 text-gold-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/></svg>
+            </button>
+            <div class="faq-answer px-6 pb-5">
+              <p class="text-zinc-400 text-sm leading-relaxed">Za standardnu kuhinju rok izrade je <strong class="text-white">3 do 5 nedelja</strong> od momenta potvrde narudžbine i avansnog plaćanja (40%). Rok uključuje narudžbinu materijala, CNC izradu, ručnu obradu, transport i montažu. Rok je definisan ugovorom sa kaznenom klauzulom u slučaju kašnjenja.</p>
+            </div>
+          </div>
+          <div class="faq-item bg-zinc-900 border border-zinc-800 rounded-xl overflow-hidden">
+            <button class="w-full flex items-center justify-between px-6 py-5 text-left hover:bg-zinc-800/50 transition-colors" onclick="toggleFaq(this)" aria-expanded="false">
+              <span class="font-medium text-white pr-4">Koliko traje izrada ugradnog ormara ili plakara?</span>
+              <svg class="faq-icon w-5 h-5 text-gold-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/></svg>
+            </button>
+            <div class="faq-answer px-6 pb-5">
+              <p class="text-zinc-400 text-sm leading-relaxed">Ugradni ormari i plakari se izrađuju za <strong class="text-white">2 do 3 nedelje</strong>. Manji komadni nameštaj može biti gotov i za 7 do 10 radnih dana. Tačan rok dobijate u ponudi posle merenja.</p>
+            </div>
+          </div>
+          <div class="faq-item bg-zinc-900 border border-zinc-800 rounded-xl overflow-hidden">
+            <button class="w-full flex items-center justify-between px-6 py-5 text-left hover:bg-zinc-800/50 transition-colors" onclick="toggleFaq(this)" aria-expanded="false">
+              <span class="font-medium text-white pr-4">Kako izgleda celokupan proces od kontakta do montaže?</span>
+              <svg class="faq-icon w-5 h-5 text-gold-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/></svg>
+            </button>
+            <div class="faq-answer px-6 pb-5">
+              <ol class="text-zinc-400 text-sm leading-relaxed space-y-2 list-none">
+                <li class="flex gap-3"><span class="text-gold-500 font-bold flex-shrink-0">1.</span><span><strong class="text-white">Kontakt i konsultacija</strong> – Pozovete nas ili pošaljete upit. Besplatan razgovor o potrebama i budžetu.</span></li>
+                <li class="flex gap-3"><span class="text-gold-500 font-bold flex-shrink-0">2.</span><span><strong class="text-white">Merenje</strong> – Naš tehničar dolazi na lokaciju i precizno meri prostor.</span></li>
+                <li class="flex gap-3"><span class="text-gold-500 font-bold flex-shrink-0">3.</span><span><strong class="text-white">3D projekat</strong> – Dizajner izrađuje vizualizaciju za 24 sata. Birate materijale i tražite izmene.</span></li>
+                <li class="flex gap-3"><span class="text-gold-500 font-bold flex-shrink-0">4.</span><span><strong class="text-white">Potvrda i avans</strong> – Potpisujete ugovor i plaćate 40% avansa. Kreće izrada.</span></li>
+                <li class="flex gap-3"><span class="text-gold-500 font-bold flex-shrink-0">5.</span><span><strong class="text-white">Montaža i predaja</strong> – Profesionalna ugradnja, čišćenje. Ostatak (60%) plaćate po završetku.</span></li>
+              </ol>
+            </div>
+          </div>
+          <div class="faq-item bg-zinc-900 border border-zinc-800 rounded-xl overflow-hidden">
+            <button class="w-full flex items-center justify-between px-6 py-5 text-left hover:bg-zinc-800/50 transition-colors" onclick="toggleFaq(this)" aria-expanded="false">
+              <span class="font-medium text-white pr-4">Da li je merenje besplatno?</span>
+              <svg class="faq-icon w-5 h-5 text-gold-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/></svg>
+            </button>
+            <div class="faq-answer px-6 pb-5">
+              <p class="text-zinc-400 text-sm leading-relaxed">Da, merenje i konsultacija su <strong class="text-white">potpuno besplatni i bez obaveza</strong>. Tek nakon što vidite 3D projekat i preciznu ponudu, vi odlučujete da li nastavljamo saradnju.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- MATERIJALI -->
+        <div id="faq-materijali" class="faq-section space-y-3" role="tabpanel">
+          <div class="faq-item bg-zinc-900 border border-zinc-800 rounded-xl overflow-hidden">
+            <button class="w-full flex items-center justify-between px-6 py-5 text-left hover:bg-zinc-800/50 transition-colors" onclick="toggleFaq(this)" aria-expanded="false">
+              <span class="font-medium text-white pr-4">Koji materijali se koriste za kuhinjske frontove?</span>
+              <svg class="faq-icon w-5 h-5 text-gold-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/></svg>
+            </button>
+            <div class="faq-answer px-6 pb-5">
+              <ul class="text-zinc-400 text-sm leading-relaxed space-y-2">
+                <li class="flex items-start gap-2"><span class="text-gold-500 mt-1">▸</span><span><strong class="text-white">HDF mat lak</strong> – mat površina bez odsjaja, 50+ boja</span></li>
+                <li class="flex items-start gap-2"><span class="text-gold-500 mt-1">▸</span><span><strong class="text-white">HDF sjaj lak</strong> – visoki sjaj, optički uvećava prostor</span></li>
+                <li class="flex items-start gap-2"><span class="text-gold-500 mt-1">▸</span><span><strong class="text-white">UV lak</strong> – ultra-otporna mat ili sjaj završnica</span></li>
+                <li class="flex items-start gap-2"><span class="text-gold-500 mt-1">▸</span><span><strong class="text-white">Furnir hrast/orah</strong> – prirodna tekstura drveta, toplina i autentičnost</span></li>
+                <li class="flex items-start gap-2"><span class="text-gold-500 mt-1">▸</span><span><strong class="text-white">Folio</strong> – ekonomičnija opcija sa odličnim izgledom</span></li>
+              </ul>
+            </div>
+          </div>
+          <div class="faq-item bg-zinc-900 border border-zinc-800 rounded-xl overflow-hidden">
+            <button class="w-full flex items-center justify-between px-6 py-5 text-left hover:bg-zinc-800/50 transition-colors" onclick="toggleFaq(this)" aria-expanded="false">
+              <span class="font-medium text-white pr-4">Koje radne površine nudite za kuhinje?</span>
+              <svg class="faq-icon w-5 h-5 text-gold-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/></svg>
+            </button>
+            <div class="faq-answer px-6 pb-5">
+              <p class="text-zinc-400 text-sm leading-relaxed">Nudimo: <strong class="text-white">kvarcopolimer</strong> (Silestone, Compac) – veoma otporan na ogrebotine i toplinu; <strong class="text-white">granit</strong> – prirodni kamen, jedinstven; <strong class="text-white">Dekton</strong> – ultra-kompaktna površina, otporna na sve; <strong class="text-white">HPL laminat</strong> – ekonomičnija opcija u 100+ dekora.</p>
+            </div>
+          </div>
+          <div class="faq-item bg-zinc-900 border border-zinc-800 rounded-xl overflow-hidden">
+            <button class="w-full flex items-center justify-between px-6 py-5 text-left hover:bg-zinc-800/50 transition-colors" onclick="toggleFaq(this)" aria-expanded="false">
+              <span class="font-medium text-white pr-4">Koji okovi se koriste?</span>
+              <svg class="faq-icon w-5 h-5 text-gold-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/></svg>
+            </button>
+            <div class="faq-answer px-6 pb-5">
+              <p class="text-zinc-400 text-sm leading-relaxed">Koristimo isključivo <strong class="text-white">Blum (Austrija)</strong>, <strong class="text-white">Hettich (Nemačka)</strong> i <strong class="text-white">Grass</strong> – svetski lideri u proizvodnji okova za nameštaj. Svi mehanizmi dolaze sa <strong class="text-white">doživotnom garancijom</strong> i poznati su po tihom, preciznom radu.</p>
+            </div>
+          </div>
+          <div class="faq-item bg-zinc-900 border border-zinc-800 rounded-xl overflow-hidden">
+            <button class="w-full flex items-center justify-between px-6 py-5 text-left hover:bg-zinc-800/50 transition-colors" onclick="toggleFaq(this)" aria-expanded="false">
+              <span class="font-medium text-white pr-4">Da li su ploče ekološki sertifikovane?</span>
+              <svg class="faq-icon w-5 h-5 text-gold-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/></svg>
+            </button>
+            <div class="faq-answer px-6 pb-5">
+              <p class="text-zinc-400 text-sm leading-relaxed">Da, koristimo isključivo <strong class="text-white">Egger</strong> iverice i MDF klase <strong class="text-white">E1</strong> sa <strong class="text-white">PEFC/FSC sertifikatom</strong> – najniža emisija formaldehida, bezbedne za dom i porodicu.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- CENE I PLACANJE -->
+        <div id="faq-cene" class="faq-section space-y-3" role="tabpanel">
+          <div class="faq-item bg-zinc-900 border border-zinc-800 rounded-xl overflow-hidden">
+            <button class="w-full flex items-center justify-between px-6 py-5 text-left hover:bg-zinc-800/50 transition-colors" onclick="toggleFaq(this)" aria-expanded="false">
+              <span class="font-medium text-white pr-4">Koliko košta kuhinja po meri?</span>
+              <svg class="faq-icon w-5 h-5 text-gold-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/></svg>
+            </button>
+            <div class="faq-answer px-6 pb-5">
+              <p class="text-zinc-400 text-sm leading-relaxed">Okvirna cena standardne kuhinje kreće se od <strong class="text-white">2.500€</strong> naviše – zavisno od dimenzija, odabranih materijala frontova i radne površine. Svaka cena uključuje merenje, 3D projekat, materijal, izradu, transport i montažu. <strong class="text-white">Nema skrivenih troškova.</strong></p>
+            </div>
+          </div>
+          <div class="faq-item bg-zinc-900 border border-zinc-800 rounded-xl overflow-hidden">
+            <button class="w-full flex items-center justify-between px-6 py-5 text-left hover:bg-zinc-800/50 transition-colors" onclick="toggleFaq(this)" aria-expanded="false">
+              <span class="font-medium text-white pr-4">Koliko košta ugradni ormar?</span>
+              <svg class="faq-icon w-5 h-5 text-gold-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/></svg>
+            </button>
+            <div class="faq-answer px-6 pb-5">
+              <p class="text-zinc-400 text-sm leading-relaxed">Cena ugradnog ormara kreće se od <strong class="text-white">800€</strong> naviše, zavisno od dimenzija, tipa vrata i unutrašnje opreme. Ponudu dobijate precizno posle merenja.</p>
+            </div>
+          </div>
+          <div class="faq-item bg-zinc-900 border border-zinc-800 rounded-xl overflow-hidden">
+            <button class="w-full flex items-center justify-between px-6 py-5 text-left hover:bg-zinc-800/50 transition-colors" onclick="toggleFaq(this)" aria-expanded="false">
+              <span class="font-medium text-white pr-4">Kako se vrši plaćanje?</span>
+              <svg class="faq-icon w-5 h-5 text-gold-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/></svg>
+            </button>
+            <div class="faq-answer px-6 pb-5">
+              <p class="text-zinc-400 text-sm leading-relaxed">Plaćanje u dve rate: <strong class="text-white">40% avansno</strong> pri potvrdi narudžbine, i <strong class="text-white">60% po završenoj montaži</strong>. Ne plaćate ništa dok nameštaj nije ugrađen i vi zadovoljni. Prihvatamo gotovinu, karticu i bankovni transfer.</p>
+            </div>
+          </div>
+          <div class="faq-item bg-zinc-900 border border-zinc-800 rounded-xl overflow-hidden">
+            <button class="w-full flex items-center justify-between px-6 py-5 text-left hover:bg-zinc-800/50 transition-colors" onclick="toggleFaq(this)" aria-expanded="false">
+              <span class="font-medium text-white pr-4">Šta je uključeno u cenu?</span>
+              <svg class="faq-icon w-5 h-5 text-gold-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/></svg>
+            </button>
+            <div class="faq-answer px-6 pb-5">
+              <ul class="text-zinc-400 text-sm leading-relaxed space-y-1">
+                <li class="flex items-center gap-2"><span class="text-gold-500">✓</span> Besplatno merenje na terenu</li>
+                <li class="flex items-center gap-2"><span class="text-gold-500">✓</span> 3D projektovanje i neograničene korekcije</li>
+                <li class="flex items-center gap-2"><span class="text-gold-500">✓</span> Sav materijal (ploče, frontovi, okovi, radna površina)</li>
+                <li class="flex items-center gap-2"><span class="text-gold-500">✓</span> CNC izrada u radionici</li>
+                <li class="flex items-center gap-2"><span class="text-gold-500">✓</span> Transport do lokacije</li>
+                <li class="flex items-center gap-2"><span class="text-gold-500">✓</span> Profesionalna montaža i čišćenje</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- GARANCIJA -->
+        <div id="faq-garancija" class="faq-section space-y-3" role="tabpanel">
+          <div class="faq-item bg-zinc-900 border border-zinc-800 rounded-xl overflow-hidden">
+            <button class="w-full flex items-center justify-between px-6 py-5 text-left hover:bg-zinc-800/50 transition-colors" onclick="toggleFaq(this)" aria-expanded="false">
+              <span class="font-medium text-white pr-4">Koliko je garancija na nameštaj po meri?</span>
+              <svg class="faq-icon w-5 h-5 text-gold-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/></svg>
+            </button>
+            <div class="faq-answer px-6 pb-5">
+              <p class="text-zinc-400 text-sm leading-relaxed">Na sav izrađeni nameštaj dajemo <strong class="text-white">2 godine garancije</strong> na konstrukciju i ugradnju. Blum i Hettich okovi imaju <strong class="text-white">doživotnu garanciju</strong> proizvođača.</p>
+            </div>
+          </div>
+          <div class="faq-item bg-zinc-900 border border-zinc-800 rounded-xl overflow-hidden">
+            <button class="w-full flex items-center justify-between px-6 py-5 text-left hover:bg-zinc-800/50 transition-colors" onclick="toggleFaq(this)" aria-expanded="false">
+              <span class="font-medium text-white pr-4">Da li radite servis i popravke posle garancijskog roka?</span>
+              <svg class="faq-icon w-5 h-5 text-gold-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/></svg>
+            </button>
+            <div class="faq-answer px-6 pb-5">
+              <p class="text-zinc-400 text-sm leading-relaxed">Da, nudimo servisnu podršku i posle garantnog roka. Zamena delova, podešavanje okova, popravka površine – kontaktirajte nas i dogovorićemo servisni izlazak.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- LOGISTIKA -->
+        <div id="faq-logistika" class="faq-section space-y-3" role="tabpanel">
+          <div class="faq-item bg-zinc-900 border border-zinc-800 rounded-xl overflow-hidden">
+            <button class="w-full flex items-center justify-between px-6 py-5 text-left hover:bg-zinc-800/50 transition-colors" onclick="toggleFaq(this)" aria-expanded="false">
+              <span class="font-medium text-white pr-4">Da li radite u celoj Srbiji?</span>
+              <svg class="faq-icon w-5 h-5 text-gold-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/></svg>
+            </button>
+            <div class="faq-answer px-6 pb-5">
+              <p class="text-zinc-400 text-sm leading-relaxed">Primarno pokrivamo <strong class="text-white">Beograd i okolinu do 50km</strong> (Novi Sad, Pančevo, Smederevo, Mladenovac). Za veće projekte van ove zone izlazimo uz prethodnu najavu i dogovor o troškovima putovanja.</p>
+            </div>
+          </div>
+          <div class="faq-item bg-zinc-900 border border-zinc-800 rounded-xl overflow-hidden">
+            <button class="w-full flex items-center justify-between px-6 py-5 text-left hover:bg-zinc-800/50 transition-colors" onclick="toggleFaq(this)" aria-expanded="false">
+              <span class="font-medium text-white pr-4">Da li je prostor spreman za montažu odmah?</span>
+              <svg class="faq-icon w-5 h-5 text-gold-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/></svg>
+            </button>
+            <div class="faq-answer px-6 pb-5">
+              <p class="text-zinc-400 text-sm leading-relaxed">Preporučujemo da su završeni svi građevinski radovi, gletovanje, molerski radovi i polaganje podova pre montaže. Naš tehničar će vam precizno reći šta mora biti gotovo na terenu merenja, kako bismo izbegli bilo kakva iznenađenja.</p>
+            </div>
+          </div>
+          <div class="faq-item bg-zinc-900 border border-zinc-800 rounded-xl overflow-hidden">
+            <button class="w-full flex items-center justify-between px-6 py-5 text-left hover:bg-zinc-800/50 transition-colors" onclick="toggleFaq(this)" aria-expanded="false">
+              <span class="font-medium text-white pr-4">Koliko traje montaža na licu mesta?</span>
+              <svg class="faq-icon w-5 h-5 text-gold-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/></svg>
+            </button>
+            <div class="faq-answer px-6 pb-5">
+              <p class="text-zinc-400 text-sm leading-relaxed">Montaža standardne kuhinje traje <strong class="text-white">1 do 2 radna dana</strong>. Ugradni ormar se montira za 4 do 8 sati. Ekipa radi pedantno i čisti prostor po završetku – vi dobijate gotov nameštaj.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CTA contact -->
+    <section class="py-24 px-6 lg:px-12 bg-zinc-900/30" aria-label="Kontakt poziv">
+      <div class="max-w-3xl mx-auto text-center">
+        <h2 class="font-serif text-3xl font-bold text-white mb-5">Niste pronašli odgovor?</h2>
+        <p class="text-zinc-400 mb-8">Pozovite nas ili pošaljite upit – odgovaramo u roku od 24h.</p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="/kontakt.html" class="gold-gradient text-zinc-950 font-semibold px-8 py-4 rounded-sm hover:opacity-90 transition-opacity">Pošaljite pitanje</a>
+          <a href="tel:+38169241074" class="border border-zinc-600 text-white font-medium px-8 py-4 rounded-sm hover:border-gold-500 hover:text-gold-400 transition-colors">069 2410 747</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="bg-zinc-950 border-t border-zinc-800 pt-16 pb-8 px-6 lg:px-12">
+    <div class="max-w-7xl mx-auto">
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+        <div class="lg:col-span-2">
+          <a href="/" class="flex items-center gap-3 mb-5 w-fit">
+            <div class="w-10 h-10 gold-gradient rounded-sm flex items-center justify-center" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 22 22" fill="none"><rect x="2" y="2" width="8" height="8" rx="1" fill="#09090b"/><rect x="12" y="2" width="8" height="8" rx="1" fill="#09090b" opacity="0.6"/><rect x="2" y="12" width="8" height="8" rx="1" fill="#09090b" opacity="0.6"/><rect x="12" y="12" width="8" height="8" rx="1" fill="#09090b"/></svg>
+            </div>
+            <div><span class="text-white font-serif font-bold text-lg leading-none block">Pametan</span><span class="gold-text font-serif font-bold text-lg leading-none block">Prostor</span></div>
+          </a>
+          <p class="text-zinc-500 text-sm leading-relaxed max-w-sm">Premium izrada nameštaja po meri u Beogradu. Kuhinje, plakari i ormari koji savršeno staju u vaš prostor.</p>
+          <address class="mt-6 not-italic space-y-2">
+            <p class="text-zinc-400 text-sm">Bulevar oslobođenja 123, Beograd</p>
+            <p class="text-zinc-400 text-sm"><a href="tel:+38169241074" class="hover:text-gold-400 transition-colors">069 2410 747</a></p>
+            <p class="text-zinc-400 text-sm"><a href="mailto:info@pametanprostor.rs" class="hover:text-gold-400 transition-colors">info@pametanprostor.rs</a></p>
+          </address>
+        </div>
+        <div>
+          <h3 class="text-white font-semibold text-sm tracking-wide uppercase mb-5">Usluge</h3>
+          <ul class="space-y-3">
+            <li><a href="/usluge/kuhinje-po-meri.html" class="text-zinc-500 text-sm hover:text-gold-400 transition-colors">Kuhinje po meri</a></li>
+            <li><a href="/usluge/plakari-ormari.html" class="text-zinc-500 text-sm hover:text-gold-400 transition-colors">Plakari i ugradni ormari</a></li>
+            <li><a href="/usluge/komadni-namestaj.html" class="text-zinc-500 text-sm hover:text-gold-400 transition-colors">Komadni nameštaj</a></li>
+            <li><a href="/portfolio.html" class="text-zinc-500 text-sm hover:text-gold-400 transition-colors">Portfolio radova</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-white font-semibold text-sm tracking-wide uppercase mb-5">Kompanija</h3>
+          <ul class="space-y-3">
+            <li><a href="/o-nama.html" class="text-zinc-500 text-sm hover:text-gold-400 transition-colors">O nama</a></li>
+            <li><a href="/faq.html" class="text-gold-400 text-sm font-medium">FAQ</a></li>
+            <li><a href="/kontakt.html" class="text-zinc-500 text-sm hover:text-gold-400 transition-colors">Kontakt</a></li>
+          </ul>
+          <div class="mt-8"><p class="text-zinc-500 text-xs font-medium">Dostupni 24/7</p></div>
+        </div>
+      </div>
+      <div class="border-t border-zinc-800 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+        <p class="text-zinc-600 text-xs">© 2026 Pametan Prostor. Sva prava zadržana.</p>
+        <p class="text-zinc-600 text-xs">Izrada sajta: <a href="https://quantex.rs" target="_blank" rel="noopener noreferrer" class="text-zinc-500 hover:text-gold-400 transition-colors underline underline-offset-2">Quantex.rs</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const nav = document.getElementById('main-nav');
+    window.addEventListener('scroll', () => nav.classList.toggle('scrolled', window.scrollY > 50), {passive:true});
+
+    function toggleMobileMenu() {
+      const menu = document.getElementById('mobile-menu');
+      const btn = document.getElementById('mobile-menu-btn');
+      const isHidden = menu.classList.toggle('hidden');
+      btn.setAttribute('aria-expanded', String(!isHidden));
+    }
+
+    function showCategory(category) {
+      document.querySelectorAll('.faq-section').forEach(s => s.classList.remove('visible'));
+      document.getElementById('faq-' + category).classList.add('visible');
+      document.querySelectorAll('.category-btn').forEach(btn => {
+        const isActive = btn.dataset.category === category;
+        btn.classList.toggle('active', isActive);
+        btn.setAttribute('aria-selected', String(isActive));
+        if (!isActive) btn.classList.add('text-zinc-400');
+        else btn.classList.remove('text-zinc-400');
+      });
+    }
+
+    function toggleFaq(btn) {
+      const item = btn.closest('.faq-item');
+      const isOpen = item.classList.toggle('open');
+      btn.setAttribute('aria-expanded', String(isOpen));
+    }
+  </script>
+</body>
+</html>

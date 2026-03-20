@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="sr" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0a0a0a" />
+
+  <title>Kontakt – Pametan Prostor | Beograd</title>
+  <meta name="description" content="Kontaktirajte Pametan Prostor za besplatnu konsultaciju i merenje. Izrada nameštaja po meri u Beogradu – kuhinje, plakari, ormari. Odgovaramo u roku od 24h." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.pametanprostor.rs/kontakt.html" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            gold: { 300: '#f0d080', 400: '#e4b84d', 500: '#c9973a', 600: '#a87c2e' },
+            zinc: { 950: '#09090b' }
+          },
+          fontFamily: {
+            serif: ['Playfair Display', 'Georgia', 'serif'],
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body { background-color: #09090b; }
+    .gold-gradient { background: linear-gradient(135deg, #c9973a 0%, #e4b84d 50%, #c9973a 100%); }
+    .gold-text { background: linear-gradient(135deg, #e4b84d, #c9973a, #f0d080); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+    ::-webkit-scrollbar { width: 6px; }
+    ::-webkit-scrollbar-track { background: #09090b; }
+    ::-webkit-scrollbar-thumb { background: #c9973a; border-radius: 3px; }
+    #main-nav { transition: background 0.3s ease, box-shadow 0.3s ease; }
+    #main-nav.scrolled { background: rgba(9,9,11,0.97); box-shadow: 0 1px 0 rgba(201,151,58,0.15); }
+    .form-input {
+      background: #111111;
+      border: 1px solid #27272a;
+      color: #fff;
+      transition: border-color 0.2s;
+    }
+    .form-input:focus { outline: none; border-color: #c9973a; box-shadow: 0 0 0 2px rgba(201,151,58,0.15); }
+    .form-input::placeholder { color: #52525b; }
+    .form-input.error { border-color: #ef4444; }
+    .form-input.success { border-color: #22c55e; }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    "@id": "https://www.pametanprostor.rs/kontakt.html",
+    "name": "Kontakt – Pametan Prostor",
+    "description": "Kontakt stranica za Pametan Prostor – izrada nameštaja po meri u Beogradu.",
+    "url": "https://www.pametanprostor.rs/kontakt.html",
+    "mainEntity": {
+      "@type": "LocalBusiness",
+      "@id": "https://www.pametanprostor.rs/#business",
+      "name": "Pametan Prostor",
+      "telephone": "+381-69-241-0747",
+      "email": "info@pametanprostor.rs",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Bulevar oslobođenja 123",
+        "addressLocality": "Beograd",
+        "postalCode": "11000",
+        "addressCountry": "RS"
+      },
+      "openingHoursSpecification": [
+        { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"], "opens": "00:00", "closes": "23:59" }
+      ]
+    }
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Početna", "item": "https://www.pametanprostor.rs/" },
+      { "@type": "ListItem", "position": 2, "name": "Kontakt", "item": "https://www.pametanprostor.rs/kontakt.html" }
+    ]
+  }
+  </script>
+</head>
+
+<body class="bg-zinc-950 text-white font-sans antialiased">
+
+  <!-- NAV -->
+  <header>
+    <nav id="main-nav" role="navigation" aria-label="Glavna navigacija"
+      class="fixed top-0 left-0 right-0 z-50 px-6 lg:px-12 py-4">
+      <div class="max-w-7xl mx-auto flex items-center justify-between">
+        <a href="/" class="flex items-center gap-3" aria-label="Pametan Prostor – Početna">
+          <div class="w-10 h-10 gold-gradient rounded-sm flex items-center justify-center flex-shrink-0" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 22 22" fill="none"><rect x="2" y="2" width="8" height="8" rx="1" fill="#09090b"/><rect x="12" y="2" width="8" height="8" rx="1" fill="#09090b" opacity="0.6"/><rect x="2" y="12" width="8" height="8" rx="1" fill="#09090b" opacity="0.6"/><rect x="12" y="12" width="8" height="8" rx="1" fill="#09090b"/></svg>
+          </div>
+          <div>
+            <span class="text-white font-serif font-bold text-lg leading-none block">Pametan</span>
+            <span class="gold-text font-serif font-bold text-lg leading-none block">Prostor</span>
+          </div>
+        </a>
+        <ul class="hidden lg:flex items-center gap-8" role="menubar">
+          <li role="none"><a href="/" role="menuitem" class="text-sm text-zinc-400 font-medium tracking-wide hover:text-white transition-colors">Početna</a></li>
+          <li role="none"><a href="/o-nama.html" role="menuitem" class="text-sm text-zinc-400 font-medium tracking-wide hover:text-white transition-colors">O nama</a></li>
+          <li role="none" class="relative group">
+            <button role="menuitem" aria-haspopup="true" class="text-sm text-zinc-400 font-medium tracking-wide hover:text-white transition-colors flex items-center gap-1">
+              Usluge <svg class="w-3.5 h-3.5 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+            </button>
+            <div class="absolute top-full left-1/2 -translate-x-1/2 mt-3 w-56 bg-zinc-900 border border-zinc-800 rounded-lg py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 shadow-2xl" role="menu">
+              <a href="/usluge/kuhinje-po-meri.html" role="menuitem" class="flex items-center gap-3 px-4 py-2.5 text-sm text-zinc-300 hover:text-white hover:bg-zinc-800 transition-colors"><span class="w-1.5 h-1.5 rounded-full bg-gold-500" aria-hidden="true"></span>Kuhinje po meri</a>
+              <a href="/usluge/plakari-ormari.html" role="menuitem" class="flex items-center gap-3 px-4 py-2.5 text-sm text-zinc-300 hover:text-white hover:bg-zinc-800 transition-colors"><span class="w-1.5 h-1.5 rounded-full bg-gold-500" aria-hidden="true"></span>Plakari i ugradni ormari</a>
+              <a href="/usluge/komadni-namestaj.html" role="menuitem" class="flex items-center gap-3 px-4 py-2.5 text-sm text-zinc-300 hover:text-white hover:bg-zinc-800 transition-colors"><span class="w-1.5 h-1.5 rounded-full bg-gold-500" aria-hidden="true"></span>Komadni nameštaj</a>
+            </div>
+          </li>
+          <li role="none"><a href="/portfolio.html" role="menuitem" class="text-sm text-zinc-400 font-medium tracking-wide hover:text-white transition-colors">Portfolio</a></li>
+          <li role="none"><a href="/faq.html" role="menuitem" class="text-sm text-zinc-400 font-medium tracking-wide hover:text-white transition-colors">FAQ</a></li>
+        </ul>
+        <div class="hidden lg:flex items-center gap-4">
+          <a href="tel:+38169241074" class="text-sm text-zinc-400 hover:text-gold-400 transition-colors font-medium">069 2410 747</a>
+          <a href="/kontakt.html" class="gold-gradient text-zinc-950 text-sm font-semibold px-5 py-2.5 rounded-sm hover:opacity-90 transition-opacity tracking-wide" aria-current="page">Besplatan Upit</a>
+        </div>
+        <button id="mobile-menu-btn" class="lg:hidden p-2 text-zinc-400 hover:text-white transition-colors" aria-label="Otvori meni" aria-expanded="false" aria-controls="mobile-menu" onclick="toggleMobileMenu()">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+      <div id="mobile-menu" class="lg:hidden hidden mt-4 pb-4 border-t border-zinc-800">
+        <ul class="flex flex-col gap-1 pt-4">
+          <li><a href="/" class="block px-4 py-2.5 text-zinc-400 hover:text-white hover:bg-zinc-900 rounded-lg transition-colors">Početna</a></li>
+          <li><a href="/o-nama.html" class="block px-4 py-2.5 text-zinc-400 hover:text-white hover:bg-zinc-900 rounded-lg transition-colors">O nama</a></li>
+          <li><a href="/usluge/kuhinje-po-meri.html" class="block px-4 py-2.5 text-zinc-400 hover:text-white hover:bg-zinc-900 rounded-lg transition-colors">Kuhinje po meri</a></li>
+          <li><a href="/usluge/plakari-ormari.html" class="block px-4 py-2.5 text-zinc-400 hover:text-white hover:bg-zinc-900 rounded-lg transition-colors">Plakari i ugradni ormari</a></li>
+          <li><a href="/usluge/komadni-namestaj.html" class="block px-4 py-2.5 text-zinc-400 hover:text-white hover:bg-zinc-900 rounded-lg transition-colors">Komadni nameštaj</a></li>
+          <li><a href="/portfolio.html" class="block px-4 py-2.5 text-zinc-400 hover:text-white hover:bg-zinc-900 rounded-lg transition-colors">Portfolio</a></li>
+          <li><a href="/faq.html" class="block px-4 py-2.5 text-zinc-400 hover:text-white hover:bg-zinc-900 rounded-lg transition-colors">FAQ</a></li>
+          <li class="pt-2"><a href="/kontakt.html" class="block mx-4 py-3 gold-gradient text-zinc-950 font-semibold text-center rounded-sm" aria-current="page">Besplatan Upit</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main-content">
+
+    <!-- HERO -->
+    <section class="pt-36 pb-16 px-6 lg:px-12 border-b border-zinc-800/50" aria-labelledby="kontakt-hero-heading">
+      <div class="max-w-7xl mx-auto">
+        <nav aria-label="Breadcrumb">
+          <ol class="flex items-center gap-2 text-xs text-zinc-500 mb-8">
+            <li><a href="/" class="hover:text-gold-400 transition-colors">Početna</a></li>
+            <li aria-hidden="true">/</li>
+            <li class="text-zinc-300">Kontakt</li>
+          </ol>
+        </nav>
+        <div class="max-w-2xl">
+          <div class="flex items-center gap-3 mb-5" aria-hidden="true">
+            <div class="w-8 h-px bg-gold-500"></div>
+            <span class="text-gold-400 text-sm font-medium tracking-widest uppercase">Kontaktirajte nas</span>
+          </div>
+          <h1 class="font-serif text-5xl lg:text-6xl font-bold text-white mb-5">
+            Razgovarajmo o<br/>
+            <span class="gold-text">vašem prostoru</span>
+          </h1>
+          <p class="text-zinc-400 text-lg leading-relaxed">
+            Konsultacija je besplatna i bez obaveza. Opišite nam vaše ideje,
+            a mi ćemo predložiti optimalno rešenje za vaš prostor i budžet.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- TRUST CARDS -->
+    <section class="py-10 px-6 lg:px-12 border-b border-zinc-800/50" aria-label="Garancije usluge">
+      <div class="max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+          <div class="flex items-center gap-4 bg-zinc-900/50 border border-zinc-800 rounded-xl p-5">
+            <div class="w-10 h-10 gold-gradient rounded-sm flex items-center justify-center flex-shrink-0" aria-hidden="true">
+              <svg class="w-5 h-5 text-zinc-950" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            </div>
+            <div>
+              <p class="text-white font-semibold text-sm">Odgovaramo u roku od 24h</p>
+              <p class="text-zinc-500 text-xs mt-0.5">Radnim danima 08–17h</p>
+            </div>
+          </div>
+          <div class="flex items-center gap-4 bg-zinc-900/50 border border-zinc-800 rounded-xl p-5">
+            <div class="w-10 h-10 gold-gradient rounded-sm flex items-center justify-center flex-shrink-0" aria-hidden="true">
+              <svg class="w-5 h-5 text-zinc-950" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+            </div>
+            <div>
+              <p class="text-white font-semibold text-sm">Besplatan izlazak na merenje</p>
+              <p class="text-zinc-500 text-xs mt-0.5">Dolazimo na vašu adresu</p>
+            </div>
+          </div>
+          <div class="flex items-center gap-4 bg-zinc-900/50 border border-zinc-800 rounded-xl p-5">
+            <div class="w-10 h-10 gold-gradient rounded-sm flex items-center justify-center flex-shrink-0" aria-hidden="true">
+              <svg class="w-5 h-5 text-zinc-950" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            </div>
+            <div>
+              <p class="text-white font-semibold text-sm">Bez obaveza</p>
+              <p class="text-zinc-500 text-xs mt-0.5">Konsultacija i 3D projekat gratis</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MAIN KONTAKT SEKCIJA -->
+    <section class="py-20 px-6 lg:px-12" aria-labelledby="form-heading">
+      <div class="max-w-7xl mx-auto">
+        <div class="grid lg:grid-cols-5 gap-12 lg:gap-16">
+
+          <!-- FORMA (3/5) -->
+          <div class="lg:col-span-3">
+            <h2 id="form-heading" class="font-serif text-3xl font-bold text-white mb-2">Pošaljite upit</h2>
+            <p class="text-zinc-500 text-sm mb-8">Popunite formu i kontaktiraćemo vas u najkraćem roku.</p>
+
+            <form id="contact-form" novalidate aria-label="Forma za kontakt" class="space-y-5">
+
+              <div class="grid sm:grid-cols-2 gap-5">
+                <div>
+                  <label for="ime" class="block text-sm font-medium text-zinc-300 mb-2">
+                    Ime i prezime <span class="text-gold-500" aria-label="obavezno polje">*</span>
+                  </label>
+                  <input type="text" id="ime" name="ime" autocomplete="name" required
+                    class="form-input w-full rounded-lg px-4 py-3 text-sm"
+                    placeholder="Marija Nikolić"
+                    aria-required="true" aria-describedby="ime-error" />
+                  <p id="ime-error" class="text-red-400 text-xs mt-1.5 hidden" role="alert">Unesite ime i prezime.</p>
+                </div>
+                <div>
+                  <label for="telefon" class="block text-sm font-medium text-zinc-300 mb-2">Telefon</label>
+                  <input type="tel" id="telefon" name="telefon" autocomplete="tel"
+                    class="form-input w-full rounded-lg px-4 py-3 text-sm"
+                    placeholder="+381 60 123 4567" />
+                </div>
+              </div>
+
+              <div>
+                <label for="email" class="block text-sm font-medium text-zinc-300 mb-2">
+                  Email adresa <span class="text-gold-500" aria-label="obavezno polje">*</span>
+                </label>
+                <input type="email" id="email" name="email" autocomplete="email" required
+                  class="form-input w-full rounded-lg px-4 py-3 text-sm"
+                  placeholder="marija@email.com"
+                  aria-required="true" aria-describedby="email-error" />
+                <p id="email-error" class="text-red-400 text-xs mt-1.5 hidden" role="alert">Unesite ispravnu email adresu.</p>
+              </div>
+
+              <div>
+                <label for="usluga" class="block text-sm font-medium text-zinc-300 mb-2">
+                  Zanima me <span class="text-gold-500" aria-label="obavezno polje">*</span>
+                </label>
+                <select id="usluga" name="usluga" required
+                  class="form-input w-full rounded-lg px-4 py-3 text-sm appearance-none cursor-pointer"
+                  aria-required="true" style="background-image: url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%2371717a'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M19 9l-7 7-7-7'/%3E%3C/svg%3E\"); background-repeat: no-repeat; background-position: right 1rem center; background-size: 1rem;">
+                  <option value="" disabled selected>Odaberite uslugu</option>
+                  <option value="kuhinja">Kuhinja po meri</option>
+                  <option value="plakar">Plakar / ugradni ormar</option>
+                  <option value="komadni">Komadni nameštaj</option>
+                  <option value="ostalo">Ostalo</option>
+                </select>
+              </div>
+
+              <div>
+                <label for="poruka" class="block text-sm font-medium text-zinc-300 mb-2">
+                  Poruka <span class="text-gold-500" aria-label="obavezno polje">*</span>
+                </label>
+                <textarea id="poruka" name="poruka" rows="5" required
+                  class="form-input w-full rounded-lg px-4 py-3 text-sm resize-none"
+                  placeholder="Opišite vaš prostor, dimenzije, željeni stil i sve što nam može pomoći da vam damo tačnu procenu..."
+                  aria-required="true" aria-describedby="poruka-error"></textarea>
+                <p id="poruka-error" class="text-red-400 text-xs mt-1.5 hidden" role="alert">Unesite poruku.</p>
+              </div>
+
+              <div class="flex items-start gap-3">
+                <div class="flex items-center h-5 mt-0.5">
+                  <input type="checkbox" id="saglasnost" name="saglasnost" required
+                    class="w-4 h-4 rounded border-zinc-700 bg-zinc-900 text-gold-500 cursor-pointer"
+                    aria-required="true" aria-describedby="saglasnost-error"
+                    style="accent-color: #c9973a;" />
+                </div>
+                <label for="saglasnost" class="text-sm text-zinc-400 leading-relaxed cursor-pointer">
+                  Saglasan/na sam sa
+                  <a href="/politika-privatnosti.html" class="text-gold-400 hover:text-gold-300 underline underline-offset-2">politikom privatnosti</a>
+                  i obradom ličnih podataka u svrhu odgovora na upit.
+                  <span class="text-gold-500" aria-label="obavezno polje">*</span>
+                </label>
+              </div>
+              <p id="saglasnost-error" class="text-red-400 text-xs hidden" role="alert">Morate prihvatiti politiku privatnosti.</p>
+
+              <button type="submit"
+                class="w-full gold-gradient text-zinc-950 font-semibold text-base py-4 rounded-sm hover:opacity-90 transition-opacity tracking-wide mt-2">
+                Pošaljite upit →
+              </button>
+
+              <!-- Success message -->
+              <div id="form-success" class="hidden bg-green-950 border border-green-800 rounded-xl p-5 text-center" role="alert" aria-live="polite">
+                <svg class="w-8 h-8 text-green-400 mx-auto mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                <p class="text-green-300 font-semibold text-base">Upit je uspešno poslat!</p>
+                <p class="text-green-500 text-sm mt-1">Kontaktiraćemo vas u roku od 24 sata.</p>
+              </div>
+
+            </form>
+          </div>
+
+          <!-- KONTAKT INFO (2/5) -->
+          <aside class="lg:col-span-2 space-y-8">
+            <div>
+              <h2 class="font-serif text-2xl font-bold text-white mb-6">Informacije</h2>
+              <address class="not-italic space-y-5">
+                <a href="tel:+38169241074" class="flex items-start gap-4 group">
+                  <div class="w-10 h-10 bg-zinc-900 border border-zinc-800 group-hover:border-gold-600 rounded-lg flex items-center justify-center flex-shrink-0 transition-colors" aria-hidden="true">
+                    <svg class="w-4.5 h-4.5 text-gold-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" width="18" height="18"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+                  </div>
+                  <div>
+                    <p class="text-zinc-500 text-xs uppercase tracking-wider mb-0.5">Telefon</p>
+                    <p class="text-white font-medium group-hover:text-gold-400 transition-colors">069 2410 747</p>
+                  </div>
+                </a>
+                <a href="mailto:info@pametanprostor.rs" class="flex items-start gap-4 group">
+                  <div class="w-10 h-10 bg-zinc-900 border border-zinc-800 group-hover:border-gold-600 rounded-lg flex items-center justify-center flex-shrink-0 transition-colors" aria-hidden="true">
+                    <svg class="w-4.5 h-4.5 text-gold-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" width="18" height="18"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                  </div>
+                  <div>
+                    <p class="text-zinc-500 text-xs uppercase tracking-wider mb-0.5">Email</p>
+                    <p class="text-white font-medium group-hover:text-gold-400 transition-colors">info@pametanprostor.rs</p>
+                  </div>
+                </a>
+                <div class="flex items-start gap-4">
+                  <div class="w-10 h-10 bg-zinc-900 border border-zinc-800 rounded-lg flex items-center justify-center flex-shrink-0" aria-hidden="true">
+                    <svg class="w-4.5 h-4.5 text-gold-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" width="18" height="18"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                  </div>
+                  <div>
+                    <p class="text-zinc-500 text-xs uppercase tracking-wider mb-0.5">Adresa</p>
+                    <p class="text-white font-medium">Bulevar oslobođenja 123</p>
+                    <p class="text-zinc-400 text-sm">11000 Beograd, Srbija</p>
+                  </div>
+                </div>
+                <div class="flex items-start gap-4">
+                  <div class="w-10 h-10 bg-zinc-900 border border-zinc-800 rounded-lg flex items-center justify-center flex-shrink-0" aria-hidden="true">
+                    <svg class="w-4.5 h-4.5 text-gold-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" width="18" height="18"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                  </div>
+                  <div>
+                    <p class="text-zinc-500 text-xs uppercase tracking-wider mb-0.5">Radno vreme</p>
+                    <p class="text-white font-medium">24/7</p>
+                  </div>
+                </div>
+              </address>
+            </div>
+
+            <!-- Mapa placeholder -->
+            <div class="rounded-xl overflow-hidden border border-zinc-800 bg-zinc-900" style="height: 240px;">
+              <div class="relative w-full h-full flex flex-col items-center justify-center gap-3"
+                   style="background: repeating-linear-gradient(0deg, transparent, transparent 39px, #27272a 39px, #27272a 40px), repeating-linear-gradient(90deg, transparent, transparent 39px, #27272a 39px, #27272a 40px);"
+                   aria-label="Mapa lokacije Pametan Prostor">
+                <div class="absolute inset-0 bg-zinc-950/40"></div>
+                <div class="relative z-10 flex flex-col items-center gap-3 text-center px-4">
+                  <div class="w-10 h-10 gold-gradient rounded-full flex items-center justify-center" aria-hidden="true">
+                    <svg class="w-5 h-5 text-zinc-950" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                  </div>
+                  <div>
+                    <p class="text-white font-semibold text-sm">Pametan Prostor</p>
+                    <p class="text-zinc-400 text-xs">Bulevar oslobođenja 123, Beograd</p>
+                  </div>
+                  <a href="https://maps.google.com/?q=Bulevar+oslobođenja+123+Beograd" target="_blank" rel="noopener noreferrer"
+                     class="text-xs text-gold-400 hover:text-gold-300 underline underline-offset-2 transition-colors">
+                    Otvori u Google Maps
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Social -->
+            <div>
+              <p class="text-zinc-500 text-xs uppercase tracking-wider mb-3">Pratite nas</p>
+              <div class="flex gap-3">
+                <a href="https://www.facebook.com/pametanprostor" target="_blank" rel="noopener noreferrer"
+                   class="flex items-center gap-2 bg-zinc-900 border border-zinc-800 hover:border-gold-600 rounded-lg px-4 py-2.5 text-sm text-zinc-400 hover:text-white transition-colors"
+                   aria-label="Facebook profil">
+                  <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                  Facebook
+                </a>
+                <a href="https://www.instagram.com/pametanprostor" target="_blank" rel="noopener noreferrer"
+                   class="flex items-center gap-2 bg-zinc-900 border border-zinc-800 hover:border-gold-600 rounded-lg px-4 py-2.5 text-sm text-zinc-400 hover:text-white transition-colors"
+                   aria-label="Instagram profil">
+                  <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                  Instagram
+                </a>
+              </div>
+            </div>
+          </aside>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="border-t border-zinc-800 bg-zinc-950" role="contentinfo">
+    <div class="max-w-7xl mx-auto px-6 lg:px-12 py-16">
+      <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-10 mb-14">
+        <div class="col-span-2 lg:col-span-2">
+          <a href="/" class="flex items-center gap-3 mb-5">
+            <div class="w-10 h-10 gold-gradient rounded-sm flex items-center justify-center" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 22 22" fill="none"><rect x="2" y="2" width="8" height="8" rx="1" fill="#09090b"/><rect x="12" y="2" width="8" height="8" rx="1" fill="#09090b" opacity="0.6"/><rect x="2" y="12" width="8" height="8" rx="1" fill="#09090b" opacity="0.6"/><rect x="12" y="12" width="8" height="8" rx="1" fill="#09090b"/></svg>
+            </div>
+            <div>
+              <span class="text-white font-serif font-bold text-xl leading-none block">Pametan</span>
+              <span class="gold-text font-serif font-bold text-xl leading-none block">Prostor</span>
+            </div>
+          </a>
+          <p class="text-zinc-500 text-sm leading-relaxed max-w-xs">Izrada nameštaja po meri u Beogradu od 2009. godine. Kuhinje, plakari i ugradni ormari. Kvalitet koji traje.</p>
+        </div>
+        <nav aria-label="Usluge">
+          <h3 class="text-white font-semibold text-sm tracking-wider uppercase mb-5">Usluge</h3>
+          <ul class="space-y-3">
+            <li><a href="/usluge/kuhinje-po-meri.html" class="text-zinc-500 hover:text-gold-400 text-sm transition-colors">Kuhinje po meri</a></li>
+            <li><a href="/usluge/plakari-ormari.html" class="text-zinc-500 hover:text-gold-400 text-sm transition-colors">Plakari i ormari</a></li>
+            <li><a href="/usluge/komadni-namestaj.html" class="text-zinc-500 hover:text-gold-400 text-sm transition-colors">Komadni nameštaj</a></li>
+          </ul>
+        </nav>
+        <nav aria-label="Kompanija">
+          <h3 class="text-white font-semibold text-sm tracking-wider uppercase mb-5">Kompanija</h3>
+          <ul class="space-y-3">
+            <li><a href="/o-nama.html" class="text-zinc-500 hover:text-gold-400 text-sm transition-colors">O nama</a></li>
+            <li><a href="/portfolio.html" class="text-zinc-500 hover:text-gold-400 text-sm transition-colors">Portfolio</a></li>
+            <li><a href="/faq.html" class="text-zinc-500 hover:text-gold-400 text-sm transition-colors">FAQ</a></li>
+            <li><a href="/kontakt.html" class="text-gold-400 text-sm">Kontakt</a></li>
+          </ul>
+        </nav>
+        <address class="not-italic">
+          <h3 class="text-white font-semibold text-sm tracking-wider uppercase mb-5">Kontakt</h3>
+          <ul class="space-y-3">
+            <li><a href="tel:+38169241074" class="text-zinc-500 hover:text-gold-400 text-sm transition-colors">069 2410 747</a></li>
+            <li><a href="mailto:info@pametanprostor.rs" class="text-zinc-500 hover:text-gold-400 text-sm transition-colors">info@pametanprostor.rs</a></li>
+            <li class="text-zinc-500 text-sm">Bulevar oslobođenja 123<br/>11000 Beograd</li>
+          </ul>
+        </address>
+      </div>
+      <div class="pt-8 border-t border-zinc-800 flex flex-col sm:flex-row items-center justify-between gap-4">
+        <p class="text-zinc-600 text-xs">© 2026 Pametan Prostor. Sva prava zadržana. Izrada sajta: <a href="https://quantex.rs" target="_blank" rel="noopener noreferrer" class="text-gold-600 hover:text-gold-400 transition-colors font-medium underline underline-offset-2">Quantex.rs</a></p>
+        <nav aria-label="Pravni linkovi"><ul class="flex items-center gap-5"><li><a href="/politika-privatnosti.html" class="text-zinc-600 hover:text-zinc-400 text-xs transition-colors">Politika privatnosti</a></li><li><a href="/uslovi-koriscenja.html" class="text-zinc-600 hover:text-zinc-400 text-xs transition-colors">Uslovi korišćenja</a></li></ul></nav>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const nav = document.getElementById('main-nav');
+    window.addEventListener('scroll', () => { nav.classList.toggle('scrolled', window.scrollY > 60); }, { passive: true });
+    function toggleMobileMenu() {
+      const menu = document.getElementById('mobile-menu');
+      const btn = document.getElementById('mobile-menu-btn');
+      const isOpen = !menu.classList.contains('hidden');
+      menu.classList.toggle('hidden');
+      btn.setAttribute('aria-expanded', String(!isOpen));
+    }
+
+    // Form validation
+    const form = document.getElementById('contact-form');
+    function validateField(input, errorId, checkFn) {
+      const err = document.getElementById(errorId);
+      const valid = checkFn(input.value.trim());
+      input.classList.toggle('error', !valid);
+      input.classList.toggle('success', valid);
+      err.classList.toggle('hidden', valid);
+      return valid;
+    }
+
+    document.getElementById('ime').addEventListener('blur', function() {
+      validateField(this, 'ime-error', v => v.length >= 2);
+    });
+    document.getElementById('email').addEventListener('blur', function() {
+      validateField(this, 'email-error', v => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v));
+    });
+    document.getElementById('poruka').addEventListener('blur', function() {
+      validateField(this, 'poruka-error', v => v.length >= 10);
+    });
+
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      const imeOk = validateField(document.getElementById('ime'), 'ime-error', v => v.length >= 2);
+      const emailOk = validateField(document.getElementById('email'), 'email-error', v => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v));
+      const porukaOk = validateField(document.getElementById('poruka'), 'poruka-error', v => v.length >= 10);
+      const saglasnost = document.getElementById('saglasnost');
+      const saglasnostErr = document.getElementById('saglasnost-error');
+      const saglasnostOk = saglasnost.checked;
+      saglasnostErr.classList.toggle('hidden', saglasnostOk);
+
+      if (imeOk && emailOk && porukaOk && saglasnostOk) {
+        form.querySelectorAll('input, select, textarea, button[type=submit]').forEach(el => el.disabled = true);
+        document.getElementById('form-success').classList.remove('hidden');
+        form.querySelector('button[type=submit]').classList.add('hidden');
+      }
+    });
+  </script>
+
+</body>
+</html>
