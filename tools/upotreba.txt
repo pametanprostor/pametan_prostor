@@ -1,0 +1,62 @@
+PAMETAN PROSTOR – Blog & Carousel Generator
+===========================================
+
+INSTALACIJA (samo prvi put)
+----------------------------
+cd /home/aceman/Documents/pametan_prostor
+pip install -r tools/requirements.txt --break-system-packages
+
+
+PODEŠAVANJE API KLJUČA
+-----------------------
+export ANTHROPIC_API_KEY="sk-ant-..."
+
+(ili dodaj u ~/.bashrc da ne moraš svaki put)
+
+
+UPOTREBA – GUI (preporučeno)
+-----------------------------
+  python tools/gui.py
+
+UPOTREBA – Terminal
+--------------------
+Generiši blog post + carousel:
+  python tools/generate.py --topic "kako odabrati radnu površinu za kuhinju po meri"
+
+Samo blog post (bez carousela):
+  python tools/generate.py --topic "prednosti ugradnih plakara" --blog-only
+
+Samo carousel (bez blog posta):
+  python tools/generate.py --topic "enterijer saveti za malu kuhinju" --carousel-only
+
+
+REZULTATI
+----------
+Blog post:  blog/{slug}.html
+Listing:    blog.html  (kartica automatski dodata)
+Carousel:   tools/output/carousels/{slug}/slides.html
+Caption:    tools/output/carousels/{slug}/caption.txt
+
+
+CAROUSEL – GOTOVE SLIKE
+------------------------
+Slike se automatski generišu kao PNG fajlovi, 1080x1080px.
+Samo ih upload-uj direktno na Instagram, nema ručnog screenshotovanja.
+
+
+KATEGORIJE
+-----------
+- Kuhinje
+- Plakari i ormari
+- Komadni nameštaj
+- Enterijer saveti
+- Renoviranje
+- Materijali
+
+
+NAPOMENE
+---------
+- Claude automatski bira kategoriju na osnovu teme
+- Slika za post se bira automatski iz /images/ foldera
+- Svaki post dobija FAQ sekciju i JSON-LD schema markup
+- Caption je spreman za copy-paste na Instagram (sa hashtagima)

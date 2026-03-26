@@ -2,6 +2,7 @@
 <html lang="sr" class="scroll-smooth">
 <head>
   <meta charset="UTF-8" />
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="theme-color" content="#0a0a0a" />
 
@@ -456,6 +457,7 @@
           </li>
 
           <li role="none"><a href="/portfolio.html" role="menuitem" class="text-sm text-zinc-400 font-medium tracking-wide hover:text-white transition-colors">Portfolio</a></li>
+          <li role="none"><a href="/blog.html" role="menuitem" class="text-sm text-zinc-400 font-medium tracking-wide hover:text-white transition-colors">Blog</a></li>
           <li role="none"><a href="/faq.html" role="menuitem" class="text-sm text-zinc-400 font-medium tracking-wide hover:text-white transition-colors">FAQ</a></li>
         </ul>
 
@@ -489,6 +491,7 @@
           <li><a href="/usluge/plakari-ormari.html" class="block px-4 py-2.5 text-zinc-400 hover:text-white hover:bg-zinc-900 rounded-lg transition-colors">Plakari i ugradni ormari</a></li>
           <li><a href="/usluge/komadni-namestaj.html" class="block px-4 py-2.5 text-zinc-400 hover:text-white hover:bg-zinc-900 rounded-lg transition-colors">Komadni nameštaj</a></li>
           <li><a href="/portfolio.html" class="block px-4 py-2.5 text-zinc-400 hover:text-white hover:bg-zinc-900 rounded-lg transition-colors">Portfolio</a></li>
+          <li><a href="/blog.html" class="block px-4 py-2.5 text-zinc-400 hover:text-white hover:bg-zinc-900 rounded-lg transition-colors">Blog</a></li>
           <li><a href="/faq.html" class="block px-4 py-2.5 text-zinc-400 hover:text-white hover:bg-zinc-900 rounded-lg transition-colors">FAQ</a></li>
           <li class="pt-2">
             <a href="/kontakt.html" class="block mx-4 py-3 gold-gradient text-zinc-950 font-semibold text-center rounded-sm transition-opacity hover:opacity-90">
@@ -588,7 +591,7 @@
     ═══════════════════════════════════════════════ -->
     <section aria-label="Statistike i dostignuća" class="border-y border-zinc-800 bg-zinc-950">
       <div class="max-w-7xl mx-auto px-6 lg:px-12">
-        <div class="grid grid-cols-2 lg:grid-cols-4 divide-x divide-zinc-800">
+        <div class="grid grid-cols-2 divide-x divide-zinc-800 max-w-2xl mx-auto">
 
           <div class="py-10 px-8 text-center">
             <p class="stat-counter font-serif text-4xl lg:text-5xl font-bold gold-text" data-target="500" aria-label="500 ili više završenih projekata">
@@ -602,20 +605,6 @@
               500<span class="text-gold-500">+</span>
             </p>
             <p class="text-zinc-400 text-sm mt-2 font-medium tracking-wide">Završenih kuhinja</p>
-          </div>
-
-          <div class="py-10 px-8 text-center">
-            <p class="stat-counter font-serif text-4xl lg:text-5xl font-bold gold-text" data-target="98" aria-label="98 posto zadovoljnih klijenata">
-              98<span class="text-gold-500">%</span>
-            </p>
-            <p class="text-zinc-400 text-sm mt-2 font-medium tracking-wide">Zadovoljnih klijenata</p>
-          </div>
-
-          <div class="py-10 px-8 text-center border-l border-zinc-800 col-span-2 lg:col-span-1">
-            <p class="stat-counter font-serif text-4xl lg:text-5xl font-bold gold-text" data-target="4.9" aria-label="Prosečna ocena 4.9 od 5">
-              4.9<span class="text-gold-500">★</span>
-            </p>
-            <p class="text-zinc-400 text-sm mt-2 font-medium tracking-wide">Prosečna ocena klijenata</p>
           </div>
 
         </div>
@@ -756,7 +745,7 @@
 
         <!-- CTA below services -->
         <div class="mt-12 text-center">
-          <a href="/usluge" class="inline-flex items-center gap-2 border border-zinc-700 text-zinc-300 hover:border-gold-500 hover:text-gold-400 text-sm font-medium px-6 py-3 rounded-sm transition-colors">
+          <a href="/usluge/kuhinje-po-meri.html" class="inline-flex items-center gap-2 border border-zinc-700 text-zinc-300 hover:border-gold-500 hover:text-gold-400 text-sm font-medium px-6 py-3 rounded-sm transition-colors">
             Sve usluge
             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
@@ -863,8 +852,8 @@
         <div class="grid grid-cols-2 lg:grid-cols-4 gap-4" role="list" aria-label="Galerija realizovanih projekata">
           <div class="lg:col-span-2 lg:row-span-2 rounded-xl overflow-hidden bg-zinc-900 group cursor-pointer" role="listitem">
             <img
-              src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&q=75"
-              alt="Realizovana kuhinja po meri – moderna bijela kuhinja sa ostrvom u Beogradu"
+              src="/images/portfolio-kuhinja-bela-ostrvo.webp"
+              alt="Realizovana kuhinja po meri – moderna bijela kuhinja sa ostrvom"
               class="w-full h-full object-cover min-h-[280px] lg:min-h-full group-hover:scale-105 transition-transform duration-700 opacity-85"
               loading="lazy"
               width="800" height="600"
@@ -872,7 +861,7 @@
           </div>
           <div class="rounded-xl overflow-hidden bg-zinc-900 group cursor-pointer" role="listitem">
             <img
-              src="https://images.unsplash.com/photo-1600489000022-c2086d79f9d4?w=600&q=75"
+              src="/images/portfolio-plakar-klizna-vrata.webp"
               alt="Ugradni ormar sa kliznim ogledalom i LED osvetljenjem"
               class="w-full h-full object-cover min-h-[160px] group-hover:scale-105 transition-transform duration-700 opacity-85"
               loading="lazy"
@@ -881,7 +870,7 @@
           </div>
           <div class="rounded-xl overflow-hidden bg-zinc-900 group cursor-pointer" role="listitem">
             <img
-              src="https://images.unsplash.com/photo-1615529328331-f8917597711f?w=600&q=75"
+              src="/images/portfolio-kuhinja-industrijska.webp"
               alt="Moderna kuhinja tamnih frontova sa ručicama od nerđajućeg čelika"
               class="w-full h-full object-cover min-h-[160px] group-hover:scale-105 transition-transform duration-700 opacity-85"
               loading="lazy"
@@ -890,7 +879,7 @@
           </div>
           <div class="rounded-xl overflow-hidden bg-zinc-900 group cursor-pointer" role="listitem">
             <img
-              src="https://images.unsplash.com/photo-1588854337236-6889d631faa8?w=600&q=75"
+              src="/images/portfolio-walkin-garderober.webp"
               alt="Plakar sa otvorenim policama i fiokama u dečijoj sobi"
               class="w-full h-full object-cover min-h-[160px] group-hover:scale-105 transition-transform duration-700 opacity-85"
               loading="lazy"
@@ -899,7 +888,7 @@
           </div>
           <div class="rounded-xl overflow-hidden bg-zinc-900 group cursor-pointer" role="listitem">
             <img
-              src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?w=600&q=75"
+              src="/images/portfolio-tv-jedinica.webp"
               alt="TV komoda po meri od hrastovog furnira sa skrivenim kablovima"
               class="w-full h-full object-cover min-h-[160px] group-hover:scale-105 transition-transform duration-700 opacity-85"
               loading="lazy"
@@ -1460,6 +1449,7 @@
           <ul class="space-y-3">
             <li><a href="/o-nama.html" class="text-zinc-500 hover:text-gold-400 text-sm transition-colors">O nama</a></li>
             <li><a href="/portfolio.html" class="text-zinc-500 hover:text-gold-400 text-sm transition-colors">Portfolio</a></li>
+            <li><a href="/blog.html" class="text-zinc-500 hover:text-gold-400 text-sm transition-colors">Blog</a></li>
             <li><a href="/faq.html" class="text-zinc-500 hover:text-gold-400 text-sm transition-colors">FAQ</a></li>
             <li><a href="/kontakt.html" class="text-zinc-500 hover:text-gold-400 text-sm transition-colors">Kontakt</a></li>
           </ul>

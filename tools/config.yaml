@@ -1,0 +1,79 @@
+site:
+  name: "Pametan Prostor"
+  url: "https://www.pametanprostor.rs"
+  phone: "065 2262 308"
+  phone_href: "+38165226230"
+  email: "kontakt@pametanprostor.rs"
+  instagram: "https://www.instagram.com/pametanprostor.rs/"
+  location: "Pančevo, Srbija"
+
+brand:
+  primary_color: "#c9973a"
+  accent_color: "#e4b84d"
+  light_color: "#f0d080"
+  background: "#09090b"
+  background_card: "#18181b"
+  text_primary: "#ffffff"
+  text_secondary: "#a1a1aa"
+  font_heading: "Playfair Display"
+  font_body: "Inter"
+
+paths:
+  root: ".."
+  images: "../images"
+  blog: "../blog"
+  output: "./output"
+  templates: "./templates"
+
+# Claude API config
+claude:
+  model: "claude-opus-4-6"
+  max_tokens: 8096
+  # Set ANTHROPIC_API_KEY environment variable
+
+categories:
+  - name: "Kuhinje"
+    slug: "kuhinje"
+  - name: "Plakari i ormari"
+    slug: "plakari"
+  - name: "Komadni nameštaj"
+    slug: "komadni-namestaj"
+  - name: "Enterijer saveti"
+    slug: "enterijer"
+  - name: "Renoviranje"
+    slug: "renoviranje"
+  - name: "Materijali"
+    slug: "materijali"
+
+image_category_map:
+  kuhinje:
+    - "kuhinja"
+    - "kuhinje"
+    - "moderna"
+    - "klasicna"
+    - "skandinavska"
+    - "industrijska"
+  plakari:
+    - "plakar"
+    - "ormar"
+    - "garderober"
+    - "walkin"
+    - "klizna"
+  komadni-namestaj:
+    - "tv-jedinica"
+    - "homeoffice"
+    - "komadni"
+    - "portfolio"
+  enterijer:
+    - "hero"
+    - "portfolio"
+  renoviranje:
+    - "portfolio"
+  materijali:
+    - "kuhinja"
+    - "portfolio"
+
+carousel:
+  width: 1080
+  height: 1080
+  brand_footer_height: 80
