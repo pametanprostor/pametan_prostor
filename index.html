@@ -130,8 +130,13 @@
     "name": "Pametan Prostor",
     "description": "Pametan Prostor izrađuje nameštaj po meri u Pančevu, Beogradu i Novom Sadu. Kuhinje po meri, plakari po meri, ugradni ormari i komadni nameštaj. Besplatno merenje, 3D projekat za 24 sata, premium materijali Egger E1, okovi Blum i Hettich, profesionalna montaža. Fiksna cena definisana ugovorom.",
     "url": "https://www.pametanprostor.rs",
-    "logo": "https://www.pametanprostor.rs/assets/logo.svg",
-    "image": "https://www.pametanprostor.rs/assets/og-image.jpg",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.pametanprostor.rs/favicon-512.png",
+      "width": 512,
+      "height": 512
+    },
+    "image": "https://www.pametanprostor.rs/og-image.jpg",
     "telephone": "+381-65-226-2308",
     "email": "kontakt@pametanprostor.rs",
     "address": {
@@ -188,6 +193,13 @@
         "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" }
       }
     ],
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "reviewCount": "47",
+      "bestRating": "5",
+      "worstRating": "1"
+    },
     "sameAs": [
       "https://www.facebook.com/pametanprostor",
       "https://www.instagram.com/pametanprostor.rs/"
@@ -376,17 +388,59 @@
   }
   </script>
 
-  <!-- BreadcrumbList for Home -->
+  <!-- 4. WebSite + SearchAction -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
+    "@type": "WebSite",
+    "@id": "https://www.pametanprostor.rs/#website",
+    "url": "https://www.pametanprostor.rs",
+    "name": "Pametan Prostor",
+    "description": "Nameštaj po meri u Pančevu, Beogradu i Novom Sadu – kuhinje, plakari, ugradni ormari.",
+    "publisher": { "@id": "https://www.pametanprostor.rs/#business" },
+    "inLanguage": "sr-RS"
+  }
+  </script>
+
+  <!-- 5. HowTo – proces naručivanja -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    "name": "Kako naručiti nameštaj po meri – Pametan Prostor",
+    "description": "Proces naručivanja nameštaja po meri od konsultacije do montaže u 5 koraka.",
+    "totalTime": "P5W",
+    "estimatedCost": { "@type": "MonetaryAmount", "currency": "EUR", "value": "2500" },
+    "step": [
       {
-        "@type": "ListItem",
+        "@type": "HowToStep",
         "position": 1,
-        "name": "Početna",
-        "item": "https://www.pametanprostor.rs/"
+        "name": "Besplatna konsultacija",
+        "text": "Kontaktirajte nas telefonom (065 2262 308), emailom ili putem kontakt forme. Konsultacija je besplatna i bez obaveza."
+      },
+      {
+        "@type": "HowToStep",
+        "position": 2,
+        "name": "Besplatno merenje",
+        "text": "Naš tehničar dolazi na vašu adresu u Pančevu, Beogradu ili Novom Sadu i precizno meri prostor."
+      },
+      {
+        "@type": "HowToStep",
+        "position": 3,
+        "name": "3D vizualizacija za 24 sata",
+        "text": "Dizajner izrađuje 3D prikaz nameštaja sa odabranim materijalima. Korekcije su besplatne do finalne potvrde."
+      },
+      {
+        "@type": "HowToStep",
+        "position": 4,
+        "name": "Potvrda i izrada",
+        "text": "Nakon potvrde projekta i avansnog plaćanja (40%), kreće precizna CNC izrada u radionici. Rok: 3–5 nedelja za kuhinje, 2–3 nedelje za ormare."
+      },
+      {
+        "@type": "HowToStep",
+        "position": 5,
+        "name": "Isporuka i montaža",
+        "text": "Profesionalna montaža na vašoj adresi. Po završetku plaćate ostatak (60%). Garancija 2 godine."
       }
     ]
   }

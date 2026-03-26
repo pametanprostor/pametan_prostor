@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
+  <url>
+    <loc>https://www.pametanprostor.rs/</loc>
+    <lastmod>2026-03-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://www.pametanprostor.rs/images/hero.webp</image:loc>
+      <image:title>Pametan Prostor – Nameštaj po meri Pančevo i Beograd</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://www.pametanprostor.rs/usluge/kuhinje-po-meri.html</loc>
+    <lastmod>2026-03-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://www.pametanprostor.rs/images/portfolio-kuhinja-bela-ostrvo.webp</image:loc>
+      <image:title>Kuhinja po meri – Pametan Prostor Pančevo</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.pametanprostor.rs/images/portfolio-kuhinja-industrijska.webp</image:loc>
+      <image:title>Industrijska kuhinja po meri – Pametan Prostor</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://www.pametanprostor.rs/usluge/plakari-ormari.html</loc>
+    <lastmod>2026-03-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://www.pametanprostor.rs/images/plakar-klizna-vrata-beli.webp</image:loc>
+      <image:title>Ugradni plakar sa kliznim vratima – Pametan Prostor</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.pametanprostor.rs/images/walkin-garderober-led.webp</image:loc>
+      <image:title>Walk-in garderober sa LED osvetljenjem – Pametan Prostor</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://www.pametanprostor.rs/usluge/komadni-namestaj.html</loc>
+    <lastmod>2026-03-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.pametanprostor.rs/images/portfolio-tv-jedinica.webp</image:loc>
+      <image:title>TV jedinica po meri – Pametan Prostor</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://www.pametanprostor.rs/portfolio.html</loc>
+    <lastmod>2026-03-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.pametanprostor.rs/images/portfolio-kuhinja-jasen.webp</image:loc>
+      <image:title>Portfolio – kuhinja od jasena po meri</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.pametanprostor.rs/images/portfolio-kuhinja-krem.webp</image:loc>
+      <image:title>Portfolio – krem kuhinja po meri</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.pametanprostor.rs/images/portfolio-walkin-garderober.webp</image:loc>
+      <image:title>Portfolio – walk-in garderober po meri</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://www.pametanprostor.rs/o-nama.html</loc>
+    <lastmod>2026-03-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://www.pametanprostor.rs/blog.html</loc>
+    <lastmod>2026-03-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://www.pametanprostor.rs/blog/saveti-za-malu-kuhinju-po-meri.html</loc>
+    <lastmod>2026-03-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.pametanprostor.rs/images/skandinavska_kuhinja.webp</image:loc>
+      <image:title>Saveti za malu kuhinju po meri – Pametan Prostor blog</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://www.pametanprostor.rs/faq.html</loc>
+    <lastmod>2026-03-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://www.pametanprostor.rs/kontakt.html</loc>
+    <lastmod>2026-03-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+</urlset>

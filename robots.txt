@@ -1,0 +1,26 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://www.pametanprostor.rs/sitemap.xml
+
+# AI crawlers – dozvoljeno za indexing
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Bytespider
+Disallow: /
+
+# Blokiranje tools/ foldera (nema smisla indeksirati)
+User-agent: *
+Disallow: /tools/
+Disallow: /blog/drafts/
