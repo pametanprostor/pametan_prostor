@@ -1,0 +1,13 @@
+{
+  "name": "Pametan Prostor",
+  "short_name": "Pametan Prostor",
+  "description": "Nameštaj po meri – kuhinje, plakari i ugradni ormari u Pančevu, Beogradu i Novom Sadu.",
+  "start_url": "/",
+  "display": "browser",
+  "background_color": "#09090b",
+  "theme_color": "#c9973a",
+  "icons": [
+    { "src": "/favicon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/favicon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}
