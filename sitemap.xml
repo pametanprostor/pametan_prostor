@@ -4,7 +4,7 @@
 
   <url>
     <loc>https://www.pametanprostor.rs/</loc>
-    <lastmod>2026-03-26</lastmod>
+    <lastmod>2026-04-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>
@@ -15,7 +15,7 @@
 
   <url>
     <loc>https://www.pametanprostor.rs/usluge/kuhinje-po-meri.html</loc>
-    <lastmod>2026-03-26</lastmod>
+    <lastmod>2026-04-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <image:image>
@@ -30,7 +30,7 @@
 
   <url>
     <loc>https://www.pametanprostor.rs/usluge/plakari-ormari.html</loc>
-    <lastmod>2026-03-26</lastmod>
+    <lastmod>2026-04-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <image:image>
@@ -45,7 +45,7 @@
 
   <url>
     <loc>https://www.pametanprostor.rs/usluge/komadni-namestaj.html</loc>
-    <lastmod>2026-03-26</lastmod>
+    <lastmod>2026-04-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -56,7 +56,7 @@
 
   <url>
     <loc>https://www.pametanprostor.rs/portfolio.html</loc>
-    <lastmod>2026-03-26</lastmod>
+    <lastmod>2026-04-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -75,21 +75,21 @@
 
   <url>
     <loc>https://www.pametanprostor.rs/o-nama.html</loc>
-    <lastmod>2026-03-26</lastmod>
+    <lastmod>2026-04-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
     <loc>https://www.pametanprostor.rs/blog.html</loc>
-    <lastmod>2026-03-26</lastmod>
+    <lastmod>2026-04-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
     <loc>https://www.pametanprostor.rs/blog/saveti-za-malu-kuhinju-po-meri.html</loc>
-    <lastmod>2026-03-26</lastmod>
+    <lastmod>2026-04-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -99,15 +99,26 @@
   </url>
 
   <url>
+    <loc>https://www.pametanprostor.rs/blog/kako-pravimo-lepe-i-funkcionalne-kuhinje.html</loc>
+    <lastmod>2026-04-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://www.pametanprostor.rs/images/portfolio-kuhinja-bela-ostrvo.webp</image:loc>
+      <image:title>Kako pravimo kuhinje po meri u Pančevu – Pametan Prostor blog</image:title>
+    </image:image>
+  </url>
+
+  <url>
     <loc>https://www.pametanprostor.rs/faq.html</loc>
-    <lastmod>2026-03-26</lastmod>
+    <lastmod>2026-04-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <url>
     <loc>https://www.pametanprostor.rs/kontakt.html</loc>
-    <lastmod>2026-03-26</lastmod>
+    <lastmod>2026-04-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
