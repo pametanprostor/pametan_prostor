@@ -5,8 +5,8 @@ __pycache__/
 .venv/
 venv/
 
-# Tools – generated output (carousel slike, captions)
-tools/output/
+# Tools – interni alati, ne treba na produkciji
+tools/
 
 # Lokalni konfig / tajne
 .env

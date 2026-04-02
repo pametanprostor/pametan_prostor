@@ -1,10 +1,9 @@
 User-agent: *
 Allow: /
+Disallow: /blog/drafts/
 
-# Sitemap
-Sitemap: https://www.pametanprostor.rs/sitemap.xml
+Sitemap: https://pametanprostor.rs/sitemap.xml
 
-# AI crawlers – dozvoljeno za indexing
 User-agent: GPTBot
 Allow: /
 
@@ -19,8 +18,3 @@ Allow: /
 
 User-agent: Bytespider
 Disallow: /
-
-# Blokiranje tools/ foldera (nema smisla indeksirati)
-User-agent: *
-Disallow: /tools/
-Disallow: /blog/drafts/
